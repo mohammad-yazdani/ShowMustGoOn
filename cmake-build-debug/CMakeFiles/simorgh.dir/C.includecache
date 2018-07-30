@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/include/page.h
+stdlib.h
+-
+stdint.h
+-
+
+/cygdrive/c/Users/Mohammed.Yazdani/simorgh/main.c
+stdio.h
+-
+page.h
+/cygdrive/c/Users/Mohammed.Yazdani/simorgh/page.h
+
+/cygdrive/c/Users/Mohammed.Yazdani/simorgh/src/lib/page.c
+string.h
+-
+stdio.h
+-
+page.h
+/cygdrive/c/Users/Mohammed.Yazdani/simorgh/src/lib/page.h
+
