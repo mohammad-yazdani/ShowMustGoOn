@@ -6,13 +6,19 @@ int main() {
     printf("Hello, World!\n");
     page *test_page = malloc(sizeof(page));
     char key0[] = "0123456";
-    int res = page_create(test_page, 0, (uintptr_t) key0);
+    int res = page_create(test_page, key0, 0);
     if (res) {
         exit(res);
     }
 
     char test[12] = "01234567891";
     res = page_insert(test_page, "test", (uintptr_t) test);
+    if (res) {
+        exit(res);
+    }
+
+	char test1[12] = "01234567891";
+    res = page_insert(test_page, "test2", (uintptr_t) test1);
     if (res) {
         exit(res);
     }

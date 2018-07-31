@@ -34,9 +34,12 @@ page_insert(page * p, const char key[KEY_LEN], uintptr_t item)
 	int res = page_create(new_page, key, item);
 	if (res) exit(res);
 
-	children = realloc(children, (p->index_count + 1) * sizeof(page *));
+	if (p->index_count == 0) children = malloc((p->index_count + 1) * sizeof(page *));
+	else children = realloc(children, (p->index_count + 1) * sizeof(page *));
+	
 	children[p->index_count] = new_page;
 	p->index_count += 1;
+	p->data = (uintptr_t) children;
 
 	return 0;
 }
@@ -60,43 +63,46 @@ page_destroy(page * p)
 char *
 page_dump(const page *p, size_t * size)
 {
-	char head[KEY_LEN + 7] = "";
-    char suffix[] = " : {\n";
+	char head[KEY_LEN + 5] = "";
+    char suffix[] = " : ";
 
-	char name_wrapped[11] = "";
-	name_wrapped[0] = '"';
+	char name_wrapped[11] = "\"";
     strcat(name_wrapped, p->key);
-    name_wrapped[9] = '"';
-    name_wrapped[10] = '\0';
+    strcat(name_wrapped, "\"");
 
     strcat(head, name_wrapped);
     strcat(head, suffix);
 
 	size_t dump_size = strlen(head);
-    char * dump;
+    char * dump = malloc(dump_size * sizeof(char));
+    strcpy(dump, head);
 
     if (p->leaf) {
-    	dump_size += strlen((char *) p->data);
-    	dump = malloc(sizeof(char) * (dump_size + 2));
+    	dump_size += strlen((char *) p->data) + 1;
+    	dump = realloc(dump, sizeof(char) * dump_size);
+    	strcat(dump, (char *) p->data);
     } else {
+    	size_t obj_size = 0;
     	char ** children_data = malloc(sizeof(char *) * p->index_count);
     	page ** children = (page **) p->data;
     	for (int i = 0; i < p->index_count; i++) {
     		size_t child_size = 0;
     		children_data [i] = page_dump((const page *) children[i], &child_size);
-    		dump_size += child_size;
+    		obj_size += child_size;
     	}
     	
-    	dump = malloc(sizeof(char) * (dump_size + 2));
-    	strcat(dump, head);
+    	size_t data_offset = dump_size;
+    	dump_size += obj_size + 2;
+    	dump = realloc(dump, sizeof(char) * (dump_size + (p->index_count - 1)));
+    	dump[data_offset] = '{';
     	for (int i = 0; i < p->index_count; i++) {
-    		strcpy(dump, children_data[i]);
+    		strcat(dump, children_data[i]);
+    		if (i + 1 < p->index_count) {
+    			strcat(dump, ",");
+    		}
     	}
+    	strcat(dump, "}");
     }
-
-    dump[dump_size] = '}';
-    dump_size += 1;
-    dump[dump_size] = '\0';
 
     *size = dump_size;
     return dump;
