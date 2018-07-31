@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/include/page.h
+stdlib.h
+-
+stdint.h
+-
+
+/home/raynor106/simorgh/main.c
+stdio.h
+-
+stdlib.h
+-
+page.h
+/home/raynor106/simorgh/page.h
+
+/home/raynor106/simorgh/src/lib/page.c
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+page.h
+/home/raynor106/simorgh/src/lib/page.h
+

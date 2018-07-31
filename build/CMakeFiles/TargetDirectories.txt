@@ -1,0 +1,3 @@
+/home/raynor106/simorgh/build/CMakeFiles/rebuild_cache.dir
+/home/raynor106/simorgh/build/CMakeFiles/edit_cache.dir
+/home/raynor106/simorgh/build/CMakeFiles/simorgh.dir
