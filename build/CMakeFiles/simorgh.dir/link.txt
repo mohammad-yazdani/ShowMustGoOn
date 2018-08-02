@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/simorgh.dir/src/lib/page.c.o CMakeFiles/simorgh.dir/main.c.o  -o bin/simorgh  -L/home/raynor106/simorgh/src/lib 

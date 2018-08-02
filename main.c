@@ -12,20 +12,20 @@ int main() {
     }
 
     char test[12] = "01234567891";
-    res = page_insert(test_page, "test", (uintptr_t) test);
-    if (res) {
-        exit(res);
+    uintptr_t res_push = page_insert(test_page, "test", (uintptr_t) test);
+    if (res_push) {
+        // TODO : Critical
+        exit((int) res_push);
     }
 
 	char test1[12] = "01234567891";
-    res = page_insert(test_page, "test2", (uintptr_t) test1);
-    if (res) {
-        exit(res);
+    res_push = page_insert(test_page, "test2", (uintptr_t) test1);
+    if (res_push) {
+        // TODO : Critical
+        exit((int) res_push);
     }
 
-    size_t size = 0;
-    char * json = page_dump(test_page, &size);
-    printf("%s", json);
+    printf("%s", page_to_json(test_page));
 
     return 0;
 }

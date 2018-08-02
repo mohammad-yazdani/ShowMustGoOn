@@ -5,7 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "page.h"
+#include <json.h>
+#include <page.h>
 
 int
 page_create(page * new_page, const char key[KEY_LEN], uintptr_t data)
@@ -61,49 +62,42 @@ page_destroy(page * p)
 }
 
 char *
-page_dump(const page *p, size_t * size)
+page_to_json(const page *p)
 {
-	char head[KEY_LEN + 5] = "";
-    char suffix[] = " : ";
+	char * dump_naked = NULL;
+	if (p->index_count > 1) {
+		page ** children = (page **) p->data;
+		char ** children_data = malloc(p->index_count * sizeof(char *));
+		size_t data_size = 0;
 
-	char name_wrapped[11] = "\"";
-    strcat(name_wrapped, p->key);
-    strcat(name_wrapped, "\"");
+		for (int i = 0; i < p->index_count; i++) {
+			char * standalone_json = page_to_json(children[i]);
+			if (i == 0) {
+				char * beginning_of_array = to_array_being(standalone_json);
+				free(standalone_json);
+				standalone_json = beginning_of_array;
+			}
+			if (i == p->index_count - 1) {
+				char * end_of_array = to_array_end(standalone_json);
+				free(standalone_json);
+				standalone_json = end_of_array;
+			}
 
-    strcat(head, name_wrapped);
-    strcat(head, suffix);
+			children_data[i] = to_array_item(standalone_json);
+			data_size += strlen(children_data[i]);
+			free(standalone_json);
+		}
 
-	size_t dump_size = strlen(head);
-    char * dump = malloc(dump_size * sizeof(char));
-    strcpy(dump, head);
+		char * rvalue = malloc(data_size * sizeof(char));
+		for (int i = 0; i < p->index_count; i++) {
+			strcat(rvalue, children_data[i]);
+			free(children_data[i]);
+		}
 
-    if (p->leaf) {
-    	dump_size += strlen((char *) p->data) + 1;
-    	dump = realloc(dump, sizeof(char) * dump_size);
-    	strcat(dump, (char *) p->data);
-    } else {
-    	size_t obj_size = 0;
-    	char ** children_data = malloc(sizeof(char *) * p->index_count);
-    	page ** children = (page **) p->data;
-    	for (int i = 0; i < p->index_count; i++) {
-    		size_t child_size = 0;
-    		children_data [i] = page_dump((const page *) children[i], &child_size);
-    		obj_size += child_size;
-    	}
-    	
-    	size_t data_offset = dump_size;
-    	dump_size += obj_size + 2;
-    	dump = realloc(dump, sizeof(char) * (dump_size + (p->index_count - 1)));
-    	dump[data_offset] = '{';
-    	for (int i = 0; i < p->index_count; i++) {
-    		strcat(dump, children_data[i]);
-    		if (i + 1 < p->index_count) {
-    			strcat(dump, ",");
-    		}
-    	}
-    	strcat(dump, "}");
-    }
+		dump_naked = create_assignment(dq_wrap(p->key), rvalue);
+	} else {
+		dump_naked = create_assignment(dq_wrap(p->key), dq_wrap((char *) p->data));
+	}
 
-    *size = dump_size;
-    return dump;
+	return dump_naked;
 }

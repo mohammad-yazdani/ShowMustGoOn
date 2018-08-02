@@ -1,0 +1,31 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/Program Files/LLVM/bin/clang-cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+clang-cl.exe: warning: unable to find a Visual Studio installation; try running Clang from a developer command prompt [-Wmsvc-not-found]
+clang-cl.exe: error: unable to execute command: program not executable
+clang-cl.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_a19a5/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a19a5.dir\build.make CMakeFiles/cmTC_a19a5.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a19a5.dir/testCCompiler.c.obj
+C:\PROGRA~1\LLVM\bin\clang-cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1   /FoCMakeFiles\cmTC_a19a5.dir\testCCompiler.c.obj /FdCMakeFiles\cmTC_a19a5.dir/ -c C:\Users\yazda\Desktop\simorgh\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_a19a5.exe
+"C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a19a5.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_a19a5.dir --manifests  -- CMAKE_LINKER-NOTFOUND /nologo @CMakeFiles\cmTC_a19a5.dir\objects1.rsp  /out:cmTC_a19a5.exe /implib:cmTC_a19a5.lib /pdb:C:\Users\yazda\Desktop\simorgh\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_a19a5.pdb /version:0.0  /machine:x64  /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+RC Pass 1: command "rc /foCMakeFiles\cmTC_a19a5.dir/manifest.res CMakeFiles\cmTC_a19a5.dir/manifest.rc" failed (exit code 0) with the following output:
+The system cannot find the file specifiedCMakeFiles\cmTC_a19a5.dir\build.make:97: recipe for target 'cmTC_a19a5.exe' failed
+mingw32-make.exe[1]: *** [cmTC_a19a5.exe] Error -1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_a19a5/fast' failed
+mingw32-make.exe: *** [cmTC_a19a5/fast] Error 2
+
+
