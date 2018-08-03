@@ -2,71 +2,102 @@
 // Created by Mohammad Yazdani on 7/30/2018.
 //
 
+#include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "page.h"
+#include <json.h>
+#include <page.h>
 
 int
-page_create(page * new_page, const int type, const char name[NAME_LENGTH])
+page_create(page * new_page, const char key[KEY_LEN], uintptr_t data)
 {
-    page page_init = { .size = 0, .children = NULL, .type = type, .name = name };
+	int is_leaf = 0;
+	if (data) is_leaf = 1;
+    page page_init = { .index_count = 0, .data = data, .leaf = is_leaf, .key = key };
     memcpy(new_page, &page_init, sizeof(page));
     return 0;
 }
 
-int
-page_insert(page * p, const uintptr_t item)
+uintptr_t
+page_insert(page * p, const char key[KEY_LEN], uintptr_t item)
 {
-    p->children = realloc(p->children, (p->size + 1) * sizeof(uintptr_t));
-    p->children[p->size] = item;
-    p->size += 1;
-    return 0;
+	page ** children = (page **) p->data;
+	for (int i = 0; i < p->index_count; i++) {
+		page * child = children[i];
+		if (strcmp(key, child->key) == 0) {
+			uintptr_t replaced_data = child->data;
+			child->data = item;
+			return replaced_data;
+		}
+	}
+
+	page * new_page = malloc(sizeof(page));
+	int res = page_create(new_page, key, item);
+	if (res) exit(res);
+
+	if (p->index_count == 0) children = malloc((p->index_count + 1) * sizeof(page *));
+	else children = realloc(children, (p->index_count + 1) * sizeof(page *));
+	
+	children[p->index_count] = new_page;
+	p->index_count += 1;
+	p->data = (uintptr_t) children;
+
+	return 0;
 }
 
 int
 page_destroy(page * p)
 {
-    if (p->type < 2) {
-        for (int i = 0; i < p->size; i++) {
-            page_destroy((page *) p->children[i]);
-        }
-        free(p->children);
-    }
-    free(p);
-    return 0;
+	// TODO : Handle errors
+	if (!p->leaf) {
+		page ** children = (page **) p->data;
+		for (int i = 0; i < p->index_count; i++) {
+			page_destroy(children[i]);
+		}
+	}
+
+	free((void *) p->data);
+	free(p);
+	return 0;
 }
 
 char *
-page_dump(const page *p, size_t * size)
+page_to_json(const page *p)
 {
-    char head[NAME_LENGTH + 5] = " : {\0";
-    strcat(head, p->name);
-    size_t dump_size = strlen(head);
-    printf(head);
+	char * dump_naked = NULL;
+	if (p->index_count > 1) {
+		page ** children = (page **) p->data;
+		char ** children_data = malloc(p->index_count * sizeof(char *));
+		size_t data_size = 0;
 
-    char * dump;
-    if (p->type < 2) {
-        char ** children_data = malloc(sizeof(char *) * p->size);
+		for (int i = 0; i < p->index_count; i++) {
+			char * standalone_json = page_to_json(children[i]);
+			if (i == 0) {
+				char * beginning_of_array = to_array_being(standalone_json);
+				free(standalone_json);
+				standalone_json = beginning_of_array;
+			}
+			if (i == p->index_count - 1) {
+				char * end_of_array = to_array_end(standalone_json);
+				free(standalone_json);
+				standalone_json = end_of_array;
+			}
 
-        for (int i = 0; i < p->size; i++) {
-            size_t child_size = 0;
-            children_data [i] = page_dump((const page *) p->children[i], &child_size);
-        }
+			children_data[i] = to_array_item(standalone_json);
+			data_size += strlen(children_data[i]);
+			free(standalone_json);
+		}
 
-        dump = malloc(sizeof(char) * (dump_size + 2));
-        strcat(dump, head);
+		char * rvalue = malloc(data_size * sizeof(char));
+		for (int i = 0; i < p->index_count; i++) {
+			strcat(rvalue, children_data[i]);
+			free(children_data[i]);
+		}
 
-        for (int i = 0; i , p->size; i++) {
-            strcpy(dump, children_data[i]);
-        }
-    } else {
-        dump = malloc(sizeof(char) * (dump_size + 2));
-    }
+		dump_naked = create_assignment(dq_wrap(p->key), rvalue);
+	} else {
+		dump_naked = create_assignment(dq_wrap(p->key), dq_wrap((char *) p->data));
+	}
 
-    dump[dump_size] = '}';
-    dump_size += 1;
-    dump[dump_size] = '\0';
-
-    *size = dump_size;
-    return dump;
+	return dump_naked;
 }

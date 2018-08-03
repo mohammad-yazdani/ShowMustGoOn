@@ -8,20 +8,18 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#define NAME_LENGTH 8
+#define KEY_LEN 8
 
-struct
-data_page {
-    size_t size;
-    uintptr_t * children;
-    const int type;
-    const char * name;
-};
-typedef struct data_page page;
+typedef struct data_page {
+    size_t index_count;
+    const int leaf;
+    uintptr_t data;
+    const char * key;
+} page;
 
-int page_create(page * new_page, int type, const char name[NAME_LENGTH]);
-int page_insert(page * p, uintptr_t item);
+int page_create(page * new_page, const char key[KEY_LEN], uintptr_t data);
+uintptr_t page_insert(page * p, const char key[KEY_LEN], uintptr_t item);
 int page_destroy(page * p);
-char * page_dump(const page *p, size_t * size);
+char * page_to_json(const page *p);
 
 #endif //SIMORGH_PAGE_H
