@@ -1,41 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_C_COMPILER=C:/Program Files/LLVM/bin/clang-cl.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files/LLVM/bin/clang-cpp.exe" -G "CodeBlocks - MinGW Makefiles" C:\Users\yazda\Desktop\simorgh
--- The C compiler identification is Clang 6.0.1
--- Check for working C compiler: C:/Program Files/LLVM/bin/clang-cl.exe
--- Check for working C compiler: C:/Program Files/LLVM/bin/clang-cl.exe -- broken
-CMake Error at C:/Program Files/JetBrains/CLion 2018.1.2/bin/cmake/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake:52 (message):
-  The C compiler
-
-    "C:/Program Files/LLVM/bin/clang-cl.exe"
-
-  is not able to compile a simple test program.
-
-  It fails with the following output:
-
-    Change Dir: C:/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp
-    
-    Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_a19a5/fast"
-    C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a19a5.dir\build.make CMakeFiles/cmTC_a19a5.dir/build
-    mingw32-make.exe[1]: Entering directory 'C:/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp'
-    Building C object CMakeFiles/cmTC_a19a5.dir/testCCompiler.c.obj
-    C:\PROGRA~1\LLVM\bin\clang-cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1   /FoCMakeFiles\cmTC_a19a5.dir\testCCompiler.c.obj /FdCMakeFiles\cmTC_a19a5.dir/ -c C:\Users\yazda\Desktop\simorgh\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
-    Linking C executable cmTC_a19a5.exe
-    "C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a19a5.dir\link.txt --verbose=1
-    "C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_a19a5.dir --manifests  -- CMAKE_LINKER-NOTFOUND /nologo @CMakeFiles\cmTC_a19a5.dir\objects1.rsp  /out:cmTC_a19a5.exe /implib:cmTC_a19a5.lib /pdb:C:\Users\yazda\Desktop\simorgh\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_a19a5.pdb /version:0.0  /machine:x64  /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
-    RC Pass 1: command "rc /foCMakeFiles\cmTC_a19a5.dir/manifest.res CMakeFiles\cmTC_a19a5.dir/manifest.rc" failed (exit code 0) with the following output:
-    The system cannot find the file specifiedCMakeFiles\cmTC_a19a5.dir\build.make:97: recipe for target 'cmTC_a19a5.exe' failed
-    mingw32-make.exe[1]: *** [cmTC_a19a5.exe] Error -1
-    mingw32-make.exe[1]: Leaving directory 'C:/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp'
-    Makefile:125: recipe for target 'cmTC_a19a5/fast' failed
-    mingw32-make.exe: *** [cmTC_a19a5/fast] Error 2
-    
-
-  
-
-  CMake will not be able to correctly generate this project.
-Call Stack (most recent call first):
-  CMakeLists.txt:2 (project)
-
-
--- Configuring incomplete, errors occurred!
-See also "C:/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeOutput.log".
-See also "C:/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeError.log".
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/vin/g++ -G "CodeBlocks - Unix Makefiles" /mnt/c/Users/yazda/Desktop/simorgh
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/yazda/Desktop/simorgh/cmake-build-debug

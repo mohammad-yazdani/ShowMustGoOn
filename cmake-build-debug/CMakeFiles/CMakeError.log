@@ -1,31 +1,49 @@
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: C:/Program Files/LLVM/bin/clang-cl.exe 
-Build flags: 
-Id flags:  
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /mnt/c/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp
 
-The output was:
-1
-clang-cl.exe: warning: unable to find a Visual Studio installation; try running Clang from a developer command prompt [-Wmsvc-not-found]
-clang-cl.exe: error: unable to execute command: program not executable
-clang-cl.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+Run Build Command:"/usr/bin/make" "cmTC_82530/fast"
+/usr/bin/make -f CMakeFiles/cmTC_82530.dir/build.make CMakeFiles/cmTC_82530.dir/build
+make[1]: Entering directory '/mnt/c/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_82530.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc     -o CMakeFiles/cmTC_82530.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_82530
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82530.dir/link.txt --verbose=1
+/usr/bin/gcc      -v CMakeFiles/cmTC_82530.dir/CMakeCCompilerABI.c.o  -o cmTC_82530  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.10' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_82530' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8H6KZZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_82530 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_82530.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/mnt/c/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Cannot copy output executable
+  '/mnt/c/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp/cmTC_82530'
+to destination specified by COPY_FILE:
+  '/mnt/c/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/3.5.1/CMakeDetermineCompilerABI_C.bin'
 
 
-Determining if the C compiler works failed with the following output:
-Change Dir: C:/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp
+Detecting C [-std=c11] compiler features failed to compile with the following output:
+Change Dir: /mnt/c/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_a19a5/fast"
-C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a19a5.dir\build.make CMakeFiles/cmTC_a19a5.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a19a5.dir/testCCompiler.c.obj
-C:\PROGRA~1\LLVM\bin\clang-cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1   /FoCMakeFiles\cmTC_a19a5.dir\testCCompiler.c.obj /FdCMakeFiles\cmTC_a19a5.dir/ -c C:\Users\yazda\Desktop\simorgh\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTC_a19a5.exe
-"C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a19a5.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_a19a5.dir --manifests  -- CMAKE_LINKER-NOTFOUND /nologo @CMakeFiles\cmTC_a19a5.dir\objects1.rsp  /out:cmTC_a19a5.exe /implib:cmTC_a19a5.lib /pdb:C:\Users\yazda\Desktop\simorgh\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_a19a5.pdb /version:0.0  /machine:x64  /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
-RC Pass 1: command "rc /foCMakeFiles\cmTC_a19a5.dir/manifest.res CMakeFiles\cmTC_a19a5.dir/manifest.rc" failed (exit code 0) with the following output:
-The system cannot find the file specifiedCMakeFiles\cmTC_a19a5.dir\build.make:97: recipe for target 'cmTC_a19a5.exe' failed
-mingw32-make.exe[1]: *** [cmTC_a19a5.exe] Error -1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:125: recipe for target 'cmTC_a19a5/fast' failed
-mingw32-make.exe: *** [cmTC_a19a5/fast] Error 2
+Run Build Command:"/usr/bin/make" "cmTC_c2ae5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c2ae5.dir/build.make CMakeFiles/cmTC_c2ae5.dir/build
+make[1]: Entering directory '/mnt/c/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c2ae5.dir/feature_tests.c.o
+/usr/bin/gcc    -std=c11 -o CMakeFiles/cmTC_c2ae5.dir/feature_tests.c.o   -c /mnt/c/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c2ae5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2ae5.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTC_c2ae5.dir/feature_tests.c.o  -o cmTC_c2ae5 
+make[1]: Leaving directory '/mnt/c/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Cannot copy output executable
+  '/mnt/c/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/CMakeTmp/cmTC_c2ae5'
+to destination specified by COPY_FILE:
+  '/mnt/c/Users/yazda/Desktop/simorgh/cmake-build-debug/CMakeFiles/feature_tests.bin'
 
 

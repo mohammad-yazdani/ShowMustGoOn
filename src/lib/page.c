@@ -7,13 +7,21 @@
 #include <stdio.h>
 #include <json.h>
 #include <page.h>
+#include <strutil.h>
 
 int
-page_create(page * new_page, const char key[KEY_LEN], uintptr_t data)
+page_create(page * new_page, const char key[KEY_LEN], uintptr_t value)
 {
 	int is_leaf = 0;
-	if (data) is_leaf = 1;
-    page page_init = { .index_count = 0, .data = data, .leaf = is_leaf, .key = key };
+	size_t size = 0;
+	char * data = NULL;
+	if (value) {
+	    is_leaf = 1;
+	    size = 1;
+	    data = strdup((char *) value);
+	}
+    page page_init = { .index_count = size, .data = (uintptr_t) data, .leaf = is_leaf, .key = key };
+
     memcpy(new_page, &page_init, sizeof(page));
     return 0;
 }
@@ -80,18 +88,19 @@ page_to_json(const page *p)
 			if (i == p->index_count - 1) {
 				char * end_of_array = to_array_end(standalone_json);
 				free(standalone_json);
-				standalone_json = end_of_array;
+				children_data[i] = end_of_array;
+			} else {
+                children_data[i] = to_array_item(standalone_json);
+                free(standalone_json);
 			}
 
-			children_data[i] = to_array_item(standalone_json);
 			data_size += strlen(children_data[i]);
-			free(standalone_json);
 		}
 
-		char * rvalue = malloc(data_size * sizeof(char));
+		char * rvalue = alloc_string(data_size);
 		for (int i = 0; i < p->index_count; i++) {
 			strcat(rvalue, children_data[i]);
-			free(children_data[i]);
+			//free(children_data[i]);
 		}
 
 		dump_naked = create_assignment(dq_wrap(p->key), rvalue);
