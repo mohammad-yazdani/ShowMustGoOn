@@ -46,14 +46,13 @@ page_insert(page * p, const char key[KEY_LEN], uintptr_t item)
 	for (int i = 0; i < p->index_count; i++) {
 		page * child = children[i];
 		if (strcmp(local_key, child->key) == 0) {
-			uintptr_t replaced_data = child->data;
-			child->data = item;
-			return replaced_data;
+			children[i] = new_page;
+			return (uintptr_t) child;
 		}
 	}
 
 	int res;
-	if (!leaf) {
+	if (leaf) {
         new_page = malloc(sizeof(page));
         res = page_create(new_page, local_key, item);
         if (res) exit(res);
@@ -72,7 +71,6 @@ page_insert(page * p, const char key[KEY_LEN], uintptr_t item)
 int
 page_destroy(page * p)
 {
-	// TODO : Handle errors
 	if (!p->leaf) {
 		page ** children = (page **) p->data;
 		for (int i = 0; i < p->index_count; i++) {
