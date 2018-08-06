@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/raynor106/simorgh/main.c
+/cygdrive/c/Users/yazda/simorgh/main.c
 stdio.h
 -
 fileio.h
 -
+strutil.h
+-
 
-/home/raynor106/simorgh/src/lib/fileio.c
+/cygdrive/c/Users/yazda/simorgh/src/lib/fileio.c
 fileio.h
 -
 stdio.h
@@ -22,7 +24,7 @@ stdlib.h
 string.h
 -
 
-/home/raynor106/simorgh/src/lib/json.c
+/cygdrive/c/Users/yazda/simorgh/src/lib/json.c
 stdlib.h
 -
 string.h
@@ -32,7 +34,7 @@ json.h
 strutil.h
 -
 
-/home/raynor106/simorgh/src/lib/page.c
+/cygdrive/c/Users/yazda/simorgh/src/lib/page.c
 stdlib.h
 -
 string.h
@@ -46,9 +48,15 @@ page.h
 strutil.h
 -
 
-/home/raynor106/simorgh/src/lib/strutil.c
+/cygdrive/c/Users/yazda/simorgh/src/lib/strutil.c
+stdlib.h
+-
 strutil.h
-/home/raynor106/simorgh/src/lib/strutil.h
+-
+string.h
+-
+stdio.h
+-
 
 src/include/fileio.h
 stdlib.h

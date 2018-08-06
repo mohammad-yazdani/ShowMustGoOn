@@ -1,0 +1,2 @@
+_numIter = 100000
+iterationID	sequenceID	eventID	loss	reinstatementPrem	riskGroup	fullRip

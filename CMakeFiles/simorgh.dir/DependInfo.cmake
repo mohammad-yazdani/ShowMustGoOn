@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/raynor106/simorgh/main.c" "/home/raynor106/simorgh/CMakeFiles/simorgh.dir/main.c.o"
-  "/home/raynor106/simorgh/src/lib/fileio.c" "/home/raynor106/simorgh/CMakeFiles/simorgh.dir/src/lib/fileio.c.o"
-  "/home/raynor106/simorgh/src/lib/json.c" "/home/raynor106/simorgh/CMakeFiles/simorgh.dir/src/lib/json.c.o"
-  "/home/raynor106/simorgh/src/lib/page.c" "/home/raynor106/simorgh/CMakeFiles/simorgh.dir/src/lib/page.c.o"
-  "/home/raynor106/simorgh/src/lib/strutil.c" "/home/raynor106/simorgh/CMakeFiles/simorgh.dir/src/lib/strutil.c.o"
+  "/cygdrive/c/Users/yazda/simorgh/main.c" "/cygdrive/c/Users/yazda/simorgh/CMakeFiles/simorgh.dir/main.c.o"
+  "/cygdrive/c/Users/yazda/simorgh/src/lib/fileio.c" "/cygdrive/c/Users/yazda/simorgh/CMakeFiles/simorgh.dir/src/lib/fileio.c.o"
+  "/cygdrive/c/Users/yazda/simorgh/src/lib/json.c" "/cygdrive/c/Users/yazda/simorgh/CMakeFiles/simorgh.dir/src/lib/json.c.o"
+  "/cygdrive/c/Users/yazda/simorgh/src/lib/page.c" "/cygdrive/c/Users/yazda/simorgh/CMakeFiles/simorgh.dir/src/lib/page.c.o"
+  "/cygdrive/c/Users/yazda/simorgh/src/lib/strutil.c" "/cygdrive/c/Users/yazda/simorgh/CMakeFiles/simorgh.dir/src/lib/strutil.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

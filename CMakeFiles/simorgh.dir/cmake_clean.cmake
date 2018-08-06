@@ -5,7 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/simorgh.dir/main.c.o"
   "CMakeFiles/simorgh.dir/src/lib/strutil.c.o"
   "simorgh.pdb"
-  "simorgh"
+  "simorgh.exe"
+  "libsimorgh.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

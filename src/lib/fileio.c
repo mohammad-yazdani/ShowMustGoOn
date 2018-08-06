@@ -42,6 +42,7 @@ read_csv_full(const char * fullpath)
 	file_data->pos = 0;
 	file_data->value = NULL;
 	
+	int count = 0;
 	while((result = fgets(buff, LINE_LEN, fp)) != NULL)
 	{
 		file_data = fiter_add(file_data, result);
