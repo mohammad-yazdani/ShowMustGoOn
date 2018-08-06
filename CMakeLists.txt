@@ -8,6 +8,8 @@ include_directories(src/include)
 add_executable(simorgh
     src/include/json.h
     src/include/page.h
+    src/include/fileio.h
     src/lib/json.c
     src/lib/page.c
+    src/lib/fileio.c
     main.c src/lib/strutil.c src/include/strutil.h)
