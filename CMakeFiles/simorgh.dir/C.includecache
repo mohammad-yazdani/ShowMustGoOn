@@ -13,6 +13,10 @@ fileio.h
 -
 strutil.h
 -
+stdlib.h
+-
+string.h
+-
 
 /cygdrive/c/Users/yazda/simorgh/src/lib/fileio.c
 fileio.h

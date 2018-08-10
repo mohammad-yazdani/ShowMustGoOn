@@ -17,17 +17,33 @@ alloc_string(const size_t size)
     return direct_mem;
 }
 
-char **
-parse_line(char * line)
+int 
+parse_line_wc(char * line)
 {
-	char * words;
-	words = strtok(line, "\t ,.-");
-
-	while (words != NULL)
+	char * word_iter = strtok(line, "\t ,.-");
+	int count = 0;
+	while (word_iter != NULL)
 	{
-		printf ("%s\n", words);
-		words = strtok (NULL, "\t ,.-");
+		word_iter = strtok (NULL, "\t ,.-");
+		count += 1;
 	}
 
-    return 0;
+    return count;
+}
+
+char **
+parse_line(char * line, const int word_count)
+{
+	char ** words = malloc(word_count * sizeof(char *));
+	char * word_iter = strtok(line, "\t ,.-");
+
+	int count = 0;
+	while (word_iter != NULL && count < word_count)
+	{
+		words[count] = word_iter;
+		word_iter = strtok (NULL, "\t ,.-");
+		count += 1;
+	}
+
+    return words;
 }

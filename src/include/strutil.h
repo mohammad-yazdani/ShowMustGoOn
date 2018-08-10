@@ -6,5 +6,5 @@
 
 char * alloc_string(size_t size);
 
-char ** parse_full_line(char * line);
-char ** parse_line(char * line, int word_count);
+int parse_line_wc(char * line);
+char ** parse_line(char * line, const int word_count);

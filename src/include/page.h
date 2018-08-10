@@ -16,6 +16,7 @@ typedef struct data_page {
 
 int page_create(page * new_page, const char key[KEY_LEN], uintptr_t data);
 uintptr_t page_insert(page * p, const char key[KEY_LEN], uintptr_t item);
+page * page_index(page * p, const char key[KEY_LEN]);
 int page_destroy(page * p);
 char * page_to_json(const page *p);
 
