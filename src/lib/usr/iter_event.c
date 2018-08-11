@@ -51,8 +51,7 @@ page_iter_data(fiter * iter_data, long int column_count)
 				// TODO : Unfold mem free
 				// TODO : Free mem so far
 				exit(res);
-			}
-
+			}	
 		}
 
 		// TODO : Insert seq id, get lower object, insert event with value (if iter newly created)	
@@ -61,14 +60,42 @@ page_iter_data(fiter * iter_data, long int column_count)
 			// TODO : Create sequence object
 			seq_page = malloc(sizeof(page));
 			page_create(seq_page, line[1], 0);
-		} else {
-
+			page_insert(curr_iter, NULL, (uintptr_t) seq_page);
 		}
-
-		// TODO : Do the same for eventid
+		
+		// TODO : Add iter data under event id key
+		uintptr_t iter_obj = create_iterevt(line[3], line[4], line[5], line[6]);
+		page_insert(seq_page, line[2], iter_obj);
 
 		if (iter_data == iter_data->next) break;
 		iter_data = iter_data->next;
 	}
 	return NULL;
+}
+
+page **
+load_events(const char * path)
+{
+	fiter * test_io = read_csv_full(path)->head->next;
+	if (test_io == NULL) exit(1);
+
+	long int data_size = 0, column_count = 0;
+
+	char ** num_iter = parse_line(test_io->value, 3);
+	data_size = strtol(num_iter[2], NULL, 10);
+
+	test_io = test_io->next;
+	if (test_io == NULL) exit(1);
+
+	char * column_data_copy = malloc(strlen(test_io->value) * sizeof(char));
+	strcpy(column_data_copy, test_io->value);
+	column_count = parse_line_wc(column_data_copy);
+	free(column_data_copy);
+
+	test_io = test_io->next;
+	int count = 0;
+	
+	// TODO : Extract objects
+
+	return 0;
 }

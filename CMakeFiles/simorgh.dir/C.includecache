@@ -9,13 +9,7 @@
 /cygdrive/c/Users/yazda/simorgh/main.c
 stdio.h
 -
-fileio.h
--
-strutil.h
--
-stdlib.h
--
-string.h
+usr/iter_event.h
 -
 
 /cygdrive/c/Users/yazda/simorgh/src/lib/fileio.c
@@ -80,5 +74,13 @@ stdint.h
 
 src/include/strutil.h
 stdlib.h
+-
+
+src/include/usr/iter_event.h
+stdint.h
+-
+page.h
+-
+fileio.h
 -
 

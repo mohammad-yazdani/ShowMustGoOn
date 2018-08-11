@@ -3,7 +3,8 @@
 
 CMakeFiles/simorgh.dir/main.c.o: main.c
 CMakeFiles/simorgh.dir/main.c.o: src/include/fileio.h
-CMakeFiles/simorgh.dir/main.c.o: src/include/strutil.h
+CMakeFiles/simorgh.dir/main.c.o: src/include/page.h
+CMakeFiles/simorgh.dir/main.c.o: src/include/usr/iter_event.h
 
 CMakeFiles/simorgh.dir/src/lib/fileio.c.o: src/lib/fileio.c
 CMakeFiles/simorgh.dir/src/lib/fileio.c.o: src/include/fileio.h

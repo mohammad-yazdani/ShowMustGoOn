@@ -4,7 +4,8 @@
 CMakeFiles/simorgh.dir/main.c.o
  /cygdrive/c/Users/yazda/simorgh/main.c
  src/include/fileio.h
- src/include/strutil.h
+ src/include/page.h
+ src/include/usr/iter_event.h
 CMakeFiles/simorgh.dir/src/lib/fileio.c.o
  /cygdrive/c/Users/yazda/simorgh/src/lib/fileio.c
  src/include/fileio.h
