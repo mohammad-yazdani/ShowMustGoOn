@@ -129,9 +129,33 @@ CMakeFiles/simorgh.dir/src/lib/fileio.c.o.provides: CMakeFiles/simorgh.dir/src/l
 CMakeFiles/simorgh.dir/src/lib/fileio.c.o.provides.build: CMakeFiles/simorgh.dir/src/lib/fileio.c.o
 
 
+CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o: CMakeFiles/simorgh.dir/flags.make
+CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o: src/lib/usr/iter_event.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/yazda/simorgh/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o   -c /cygdrive/c/Users/yazda/simorgh/src/lib/usr/iter_event.c
+
+CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/yazda/simorgh/src/lib/usr/iter_event.c > CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.i
+
+CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/yazda/simorgh/src/lib/usr/iter_event.c -o CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.s
+
+CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o.requires:
+
+.PHONY : CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o.requires
+
+CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o.provides: CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o.requires
+	$(MAKE) -f CMakeFiles/simorgh.dir/build.make CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o.provides.build
+.PHONY : CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o.provides
+
+CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o.provides.build: CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o
+
+
 CMakeFiles/simorgh.dir/main.c.o: CMakeFiles/simorgh.dir/flags.make
 CMakeFiles/simorgh.dir/main.c.o: main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/yazda/simorgh/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/simorgh.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/yazda/simorgh/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/simorgh.dir/main.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/simorgh.dir/main.c.o   -c /cygdrive/c/Users/yazda/simorgh/main.c
 
 CMakeFiles/simorgh.dir/main.c.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/simorgh.dir/main.c.o.provides.build: CMakeFiles/simorgh.dir/main.c.o
 
 CMakeFiles/simorgh.dir/src/lib/strutil.c.o: CMakeFiles/simorgh.dir/flags.make
 CMakeFiles/simorgh.dir/src/lib/strutil.c.o: src/lib/strutil.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/yazda/simorgh/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/simorgh.dir/src/lib/strutil.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/yazda/simorgh/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/simorgh.dir/src/lib/strutil.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/simorgh.dir/src/lib/strutil.c.o   -c /cygdrive/c/Users/yazda/simorgh/src/lib/strutil.c
 
 CMakeFiles/simorgh.dir/src/lib/strutil.c.i: cmake_force
@@ -182,6 +206,7 @@ simorgh_OBJECTS = \
 "CMakeFiles/simorgh.dir/src/lib/json.c.o" \
 "CMakeFiles/simorgh.dir/src/lib/page.c.o" \
 "CMakeFiles/simorgh.dir/src/lib/fileio.c.o" \
+"CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o" \
 "CMakeFiles/simorgh.dir/main.c.o" \
 "CMakeFiles/simorgh.dir/src/lib/strutil.c.o"
 
@@ -191,11 +216,12 @@ simorgh_EXTERNAL_OBJECTS =
 simorgh.exe: CMakeFiles/simorgh.dir/src/lib/json.c.o
 simorgh.exe: CMakeFiles/simorgh.dir/src/lib/page.c.o
 simorgh.exe: CMakeFiles/simorgh.dir/src/lib/fileio.c.o
+simorgh.exe: CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o
 simorgh.exe: CMakeFiles/simorgh.dir/main.c.o
 simorgh.exe: CMakeFiles/simorgh.dir/src/lib/strutil.c.o
 simorgh.exe: CMakeFiles/simorgh.dir/build.make
 simorgh.exe: CMakeFiles/simorgh.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/yazda/simorgh/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable simorgh.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/yazda/simorgh/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable simorgh.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simorgh.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -206,6 +232,7 @@ CMakeFiles/simorgh.dir/build: simorgh.exe
 CMakeFiles/simorgh.dir/requires: CMakeFiles/simorgh.dir/src/lib/json.c.o.requires
 CMakeFiles/simorgh.dir/requires: CMakeFiles/simorgh.dir/src/lib/page.c.o.requires
 CMakeFiles/simorgh.dir/requires: CMakeFiles/simorgh.dir/src/lib/fileio.c.o.requires
+CMakeFiles/simorgh.dir/requires: CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o.requires
 CMakeFiles/simorgh.dir/requires: CMakeFiles/simorgh.dir/main.c.o.requires
 CMakeFiles/simorgh.dir/requires: CMakeFiles/simorgh.dir/src/lib/strutil.c.o.requires
 

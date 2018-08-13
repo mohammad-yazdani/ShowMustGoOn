@@ -9,8 +9,10 @@ add_executable(simorgh
     src/include/json.h
     src/include/page.h
     src/include/fileio.h
+    src/include/usr/iter_event.h
     src/lib/json.c
     src/lib/page.c
     src/lib/fileio.c
+    src/lib/usr/iter_event.c
     main.c src/lib/strutil.c src/include/strutil.h)
 

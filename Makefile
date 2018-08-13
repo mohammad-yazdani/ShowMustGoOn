@@ -258,6 +258,33 @@ src/lib/strutil.c.s:
 	$(MAKE) -f CMakeFiles/simorgh.dir/build.make CMakeFiles/simorgh.dir/src/lib/strutil.c.s
 .PHONY : src/lib/strutil.c.s
 
+src/lib/usr/iter_event.o: src/lib/usr/iter_event.c.o
+
+.PHONY : src/lib/usr/iter_event.o
+
+# target to build an object file
+src/lib/usr/iter_event.c.o:
+	$(MAKE) -f CMakeFiles/simorgh.dir/build.make CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o
+.PHONY : src/lib/usr/iter_event.c.o
+
+src/lib/usr/iter_event.i: src/lib/usr/iter_event.c.i
+
+.PHONY : src/lib/usr/iter_event.i
+
+# target to preprocess a source file
+src/lib/usr/iter_event.c.i:
+	$(MAKE) -f CMakeFiles/simorgh.dir/build.make CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.i
+.PHONY : src/lib/usr/iter_event.c.i
+
+src/lib/usr/iter_event.s: src/lib/usr/iter_event.c.s
+
+.PHONY : src/lib/usr/iter_event.s
+
+# target to generate assembly for a file
+src/lib/usr/iter_event.c.s:
+	$(MAKE) -f CMakeFiles/simorgh.dir/build.make CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.s
+.PHONY : src/lib/usr/iter_event.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +309,9 @@ help:
 	@echo "... src/lib/strutil.o"
 	@echo "... src/lib/strutil.i"
 	@echo "... src/lib/strutil.s"
+	@echo "... src/lib/usr/iter_event.o"
+	@echo "... src/lib/usr/iter_event.i"
+	@echo "... src/lib/usr/iter_event.s"
 .PHONY : help
 
 

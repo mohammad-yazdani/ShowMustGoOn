@@ -18,12 +18,16 @@ create_iterevt(char * loss, char * reinstPrem, char * riskGroup, char * fullrip)
 	return (uintptr_t) iter_obj;
 }
 
-page **
+page *
 page_iter_data(fiter * iter_data, long int column_count)
 {
 	page ** pages = NULL;
 	char * iter_id = NULL;
 	page * curr_iter = NULL;
+
+	page * surface = malloc(sizeof(page));
+	int pres = page_create(surface, "root", 0);
+	if (pres) exit(pres);
 
 	while(iter_data != NULL) {
 		char ** line = parse_line(iter_data->value, column_count);
@@ -39,11 +43,18 @@ page_iter_data(fiter * iter_data, long int column_count)
 				exit(res);
 			}
 		}
-		else if (strcmp(iter_id, line[0]) == 0) {
+		else if (strcmp(iter_id, line[0]) != 0) {
 			// Proccessing new iteration
-			// TODO : Save prev iter
-			printf("HAVE TO SAVE %d\n", (int) curr_iter);
-			// TODO : Create new iter
+			// Save prev iter
+			uintptr_t popped = page_insert(surface, NULL, (uintptr_t) curr_iter);
+			if (popped) {
+				printf("ERR: Replacing events.");
+				// TODO : Define exit codes
+				exit(1);
+			}
+			printf("HAVE TO SAVE %s\n", curr_iter->key);
+			
+			// Create new iter
 			iter_id = line[0];
 			curr_iter = malloc(sizeof(page));
 			int res = page_create(curr_iter, iter_id, 0);
@@ -70,10 +81,10 @@ page_iter_data(fiter * iter_data, long int column_count)
 		if (iter_data == iter_data->next) break;
 		iter_data = iter_data->next;
 	}
-	return NULL;
+	return surface;
 }
 
-page **
+page *
 load_events(const char * path)
 {
 	fiter * test_io = read_csv_full(path)->head->next;
@@ -96,6 +107,7 @@ load_events(const char * path)
 	int count = 0;
 	
 	// TODO : Extract objects
-
-	return 0;
+	
+	page * extracted_data = page_iter_data(test_io, column_count);
+	return extracted_data;
 }

@@ -11,6 +11,6 @@ typedef struct iter_event {
 
 uintptr_t create_iterevt(char * loss, char * reinstPrem, char * riskGroup, char * fullRip);
 
-page ** page_iter_data(fiter * iter_data, long int column_count); 
+page * page_iter_data(fiter * iter_data, long int column_count); 
 
-page ** load_events(const char * path);
+page * load_events(const char * path);

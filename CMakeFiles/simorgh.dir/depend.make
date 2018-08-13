@@ -21,3 +21,9 @@ CMakeFiles/simorgh.dir/src/lib/page.c.o: src/include/strutil.h
 CMakeFiles/simorgh.dir/src/lib/strutil.c.o: src/lib/strutil.c
 CMakeFiles/simorgh.dir/src/lib/strutil.c.o: src/include/strutil.h
 
+CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o: src/lib/usr/iter_event.c
+CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o: src/include/fileio.h
+CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o: src/include/page.h
+CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o: src/include/strutil.h
+CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o: src/include/usr/iter_event.h
+
