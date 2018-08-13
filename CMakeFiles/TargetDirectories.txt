@@ -1,3 +1,0 @@
-/cygdrive/c/Users/yazda/simorgh/CMakeFiles/edit_cache.dir
-/cygdrive/c/Users/yazda/simorgh/CMakeFiles/simorgh.dir
-/cygdrive/c/Users/yazda/simorgh/CMakeFiles/rebuild_cache.dir
