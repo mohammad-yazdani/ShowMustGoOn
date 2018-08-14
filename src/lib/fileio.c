@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <errno.h>
 
 fiter *
 fiter_add(fiter * iter, char * value)
@@ -31,12 +32,9 @@ read_csv_full(const char * fullpath)
 	rewind (fp);
 
 	char buff[LINE_LEN], * result;
-	// TODO : Handle ENOMEM
-	//int res = fread(buff, 1, fsize, fp);
-	//(void)res;
-	// TODO : Handle read err (res != fsize)
 	
 	fiter * file_data = malloc(sizeof(fiter));
+	if (file_data == NULL) exit(ENOMEM);
 	file_data->head = file_data;
 	file_data->next = NULL;
 	file_data->pos = 0;

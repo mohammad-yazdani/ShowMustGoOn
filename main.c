@@ -4,7 +4,7 @@
 int
 main()
 {
-	load_events("./iter-event-loss-portfolio.txt");
 	printf("Running Simorgh...\n");
+	load_events("./iter-event-loss-portfolio.txt");
     return 0;
 }

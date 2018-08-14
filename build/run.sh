@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cmake .
+cmake ..
 make
 ./simorgh > out.temp
 cat out.temp
