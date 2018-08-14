@@ -68,6 +68,18 @@ page_insert(page * p, const char key[KEY_LEN], uintptr_t item)
 	return 0;
 }
 
+page *
+page_index(page * p, const char key[KEY_LEN])
+{
+	page ** children = (page **) p->data;
+	for (int i = 0; i < p->index_count; i++) {
+		if (!strcmp(key, children[i]->key)) {
+			return children[i];
+		}
+	}
+	return NULL;
+}
+
 int
 page_destroy(page * p)
 {
