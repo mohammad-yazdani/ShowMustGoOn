@@ -1,0 +1,4 @@
+contractID	contractName	programId	modelFileID	exchangeRate	limit	attachment	annualLimit	annualAggDeductible	franchiseDeductible	numEventTrigger	binaryPayOff	participation	ROL	requiredROE	reinstatementRatio1	reinstatementRatio2	reinstatementRatio3	reinstatementRatio4	newParticipation	lossAP	brokerageOnDepPrem	brokerageOnRiPrem	cedingCommission	varExpenseRatio	fixedExpense	premiumTax	coParticipation	lossMultiplier	expProfitAndExpense	allocEquity
+1447868	prj of Layer 2	94070	46312a	1.0	3.0E7	3.0E7	6.0E7	0.0	0.0	0	N	0.04	0.05125	0.18	1.0	0.0	0.0	0.0	0.04	0.0	0.1	0.05	0.0	0.0	0.0	0.01	1.0	1.0	54735.0	164943.0
+1447869	prj of Layer 3	94070	46312a	1.0	4.0E7	6.0E7	8.0E7	0.0	0.0	0	N	0.04	0.033125	0.18	1.0	0.0	0.0	0.0	0.04	0.0	0.1	0.05	0.0	0.0	0.0	0.01	1.0	1.0	47170.0	191589.0
+1447867	prj of Layer 1	94070	46312a	1.0	2.5E7	5000000.0	5.0E7	0.0	0.0	0	N	0.0375	0.090625	0.18	1.0	0.0	0.0	0.0	0.0375	0.0	0.1	0.05	0.0	0.0	0.0	0.01	1.0	1.0	75615.234375	144207.0

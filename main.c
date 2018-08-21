@@ -1,10 +1,14 @@
 #include <stdio.h>
+#include <usr/contract.h>
 #include <usr/iter_event.h>
 
 int
 main()
 {
-	printf("Running Simorgh...\n");
-	load_events("./iter-event-loss-portfolio.txt");
+	printf("Running ...\n");
+	page * contracts = load_contracts("../data/layers.txt");
+	char * json = page_to_json(contracts);
+	printf("%s\n", json);
+	load_events("../data/test.txt");
     return 0;
 }

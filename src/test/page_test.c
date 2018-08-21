@@ -3,7 +3,7 @@
 #include <json.h>
 #include "page.h"
 
-int main() {
+int t1main() {
     printf("Hello, World!\n");
     page *test_page = malloc(sizeof(page));
     char key0[] = "0123456";

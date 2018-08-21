@@ -20,7 +20,7 @@ fiter_add(fiter * iter, char * value)
 }
 
 fiter * 
-read_csv_full(const char * fullpath)
+read_csv_full(const char * fullpath, unsigned long line_len)
 {
 	FILE * fp;
 	fp = fopen (fullpath, "r");
@@ -28,10 +28,10 @@ read_csv_full(const char * fullpath)
 	unsigned long fsize;
 
 	fseek (fp , 0 , SEEK_END);
-	fsize = ftell (fp);
+	fsize = (unsigned long) ftell (fp);
 	rewind (fp);
 
-	char buff[LINE_LEN], * result;
+	char buff[line_len], * result;
 	
 	fiter * file_data = malloc(sizeof(fiter));
 	if (file_data == NULL) exit(ENOMEM);
@@ -41,7 +41,7 @@ read_csv_full(const char * fullpath)
 	file_data->value = NULL;
 	
 	int count = 0;
-	while((result = fgets(buff, LINE_LEN, fp)) != NULL)
+	while((result = fgets(buff, line_len, fp)) != NULL)
 	{
 		file_data = fiter_add(file_data, result);
 	}

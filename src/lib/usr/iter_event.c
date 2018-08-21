@@ -5,6 +5,8 @@
 #include <strutil.h>
 #include <usr/iter_event.h>
 
+// TODO : Rename [ALL] based on standard
+
 uintptr_t
 create_iterevt(char * loss, char * reinstPrem, char * riskGroup, char * fullrip)
 {
@@ -18,11 +20,11 @@ create_iterevt(char * loss, char * reinstPrem, char * riskGroup, char * fullrip)
 	return (uintptr_t) iter_obj;
 }
 
+// TODO : This is where the streaming beings
 page *
 page_iter_data(fiter * iter_data, long int column_count)
 {
-	page ** pages = NULL;
-	char * iter_id = NULL;
+    char * iter_id = NULL;
 	page * curr_iter = NULL;
 
 	page * surface = malloc(sizeof(page));
@@ -30,9 +32,9 @@ page_iter_data(fiter * iter_data, long int column_count)
 	if (pres) exit(pres);
 
 	while(iter_data != NULL) {
-		char ** line = parse_line(iter_data->value, column_count);
+		char ** line = parse_line(iter_data->value, (const int) column_count);
 
-		// Very inefficient, but important to the research	
+		// Very inefficient, but important to the research
 		if (iter_id == NULL) {
 			iter_id = line[0];
 			curr_iter = malloc(sizeof(page));
@@ -44,7 +46,7 @@ page_iter_data(fiter * iter_data, long int column_count)
 			}
 		}
 		else if (strcmp(iter_id, line[0]) != 0) {
-			// Proccessing new iteration
+			// Processing new iteration
 			// Save prev iter
 			uintptr_t popped = page_insert(surface, NULL, (uintptr_t) curr_iter);
 			if (popped) {
@@ -52,7 +54,7 @@ page_iter_data(fiter * iter_data, long int column_count)
 				exit(EPERM);
 			}
 			printf("HAVE TO SAVE %s\n", curr_iter->key);
-			
+
 			// Create new iter
 			iter_id = line[0];
 			curr_iter = malloc(sizeof(page));
@@ -61,16 +63,16 @@ page_iter_data(fiter * iter_data, long int column_count)
 				free(curr_iter);
 				page_destroy(surface);
 				exit(res);
-			}	
+			}
 		}
 
 		page * seq_page = page_index(curr_iter, line[1]);
-		if (seq_page == NULL) {	
+		if (seq_page == NULL) {
 			seq_page = malloc(sizeof(page));
 			page_create(seq_page, line[1], 0);
 			page_insert(curr_iter, NULL, (uintptr_t) seq_page);
 		}
-			
+
 		uintptr_t iter_obj = create_iterevt(line[3], line[4], line[5], line[6]);
 		page_insert(seq_page, line[2], iter_obj);
 
@@ -80,16 +82,17 @@ page_iter_data(fiter * iter_data, long int column_count)
 	return surface;
 }
 
+// TODO : Or the streaming begins here?
 page *
 load_events(const char * path)
 {
-	fiter * test_io = read_csv_full(path)->head->next;
+	fiter * test_io = read_csv_full(path, ITER_LINE_LEN)->head->next;
 	if (test_io == NULL) exit(1);
 
-	long int data_size = 0, column_count = 0;
+	long int column_count = 0;
 
 	char ** num_iter = parse_line(test_io->value, 3);
-	data_size = strtol(num_iter[2], NULL, 10);
+	strtol(num_iter[2], NULL, 10);
 
 	test_io = test_io->next;
 	if (test_io == NULL) exit(1);
@@ -100,8 +103,7 @@ load_events(const char * path)
 	free(column_data_copy);
 
 	test_io = test_io->next;
-	int count = 0;
-		
-	page * extracted_data = page_iter_data(test_io, column_count);
+
+    page * extracted_data = page_iter_data(test_io, column_count);
 	return extracted_data;
 }
