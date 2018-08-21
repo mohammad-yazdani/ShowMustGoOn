@@ -6,9 +6,15 @@ int
 main()
 {
 	printf("Running ...\n");
-	page * contracts = load_contracts("../data/layers.txt");
-	char * json = page_to_json(contracts);
-	printf("%s\n", json);
+
+	queue * contracts = load_contracts("../data/layers.txt");
+
+	contract * c = (contract *) queue_pop(contracts);
+	while (c != NULL) {
+	    printf("%s\n", c->contract_id);
+	    c = (contract *) queue_pop(contracts);
+	}
+
 	load_events("../data/test.txt");
     return 0;
 }

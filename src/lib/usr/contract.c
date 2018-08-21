@@ -35,11 +35,11 @@ contract_load(const char ** src)
     return c;
 }
 
-page *
-page_contracts(fiter * cdata, long int column_count)
+queue *
+enqueue_contracts(fiter * cdata, long int column_count)
 {
-    page * surface = malloc(sizeof(page));
-    int res = page_create(surface, "root", 0);
+    queue * q = malloc(sizeof(queue));
+    int res = queue_create(q);
     if (res) exit(res);
 
     if (cdata == NULL) exit(1);
@@ -48,16 +48,15 @@ page_contracts(fiter * cdata, long int column_count)
         char ** line = parse_line(cdata->value, (const int) column_count);
 
         contract * c = contract_load((const char **) line);
-
-        page_insert(surface, c->contract_id, (uintptr_t) c);
+        queue_push(q, (uintptr_t) c);
 
         if (cdata == cdata->next) break;
         cdata = cdata->next;
     }
-    return surface;
+    return q;
 }
 
-page *
+queue *
 load_contracts(const char * path)
 {
     fiter * test_io = read_csv_full(path, LAYTERS_LINE_LEN)->head->next;
@@ -72,6 +71,6 @@ load_contracts(const char * path)
 
     test_io = test_io->next;
 
-    page * extracted_data = page_contracts(test_io, column_count);
+    queue * extracted_data = enqueue_contracts(test_io, column_count);
     return extracted_data;
 }

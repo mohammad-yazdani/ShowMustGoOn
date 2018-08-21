@@ -3,7 +3,9 @@
 
 CMakeFiles/s0.dir/main.c.o
  ../src/include/fileio.h
+ ../src/include/linked.h
  ../src/include/page.h
+ ../src/include/queue.h
  ../src/include/usr/contract.h
  ../src/include/usr/iter_event.h
  /Users/raynor106/s0/main.c
@@ -19,12 +21,18 @@ CMakeFiles/s0.dir/src/lib/page.c.o
  ../src/include/page.h
  ../src/include/strutil.h
  /Users/raynor106/s0/src/lib/page.c
+CMakeFiles/s0.dir/src/lib/queue.c.o
+ ../src/include/linked.h
+ ../src/include/queue.h
+ /Users/raynor106/s0/src/lib/queue.c
 CMakeFiles/s0.dir/src/lib/strutil.c.o
  ../src/include/strutil.h
  /Users/raynor106/s0/src/lib/strutil.c
 CMakeFiles/s0.dir/src/lib/usr/contract.c.o
  ../src/include/fileio.h
+ ../src/include/linked.h
  ../src/include/page.h
+ ../src/include/queue.h
  ../src/include/strutil.h
  ../src/include/usr/contract.h
  /Users/raynor106/s0/src/lib/usr/contract.c

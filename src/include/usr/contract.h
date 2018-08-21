@@ -7,6 +7,7 @@
 
 #include <page.h>
 #include <fileio.h>
+#include <queue.h>
 
 typedef struct contract_object {
     char * contract_id;
@@ -15,7 +16,8 @@ typedef struct contract_object {
 int contract_create(contract * collector, const char * contract_id);
 int contract_destroy(contract * c);
 
-page * page_contracts(fiter * cdata, long int column_count);
-page * load_contracts(const char * path);
+
+queue * enqueue_contracts(fiter * cdata, long int column_count);
+queue * load_contracts(const char * path);
 
 #endif //S0_CONTRACT_H

@@ -12,57 +12,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43e5e726-9c4d-40a2-8df4-f63050b3907c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/raynor106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/include/usr/contract.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/usr/contract.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/include/linked.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/include/queue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/queue.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.6.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.6.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.6.2/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.6.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.6.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.6.2/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/C.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/src/lib/fileio.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/src/lib/json.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/src/lib/page.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/src/lib/strutil.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/simorgh.dir/src/lib/usr/iter_event.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/debug.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/iter-event-loss-portfolio.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/simorgh.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/s0.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/s0.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/fileio.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/fileio.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/json.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/json.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/page.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/page.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/strutil.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/strutil.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/usr/iter_event.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/usr/iter_event.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/fileio.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/fileio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/usr/iter_event.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/usr/iter_event.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/json_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/json_test.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/page_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/page_test.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/include/usr/contract.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/usr/contract.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/usr/contract.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/usr/contract.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,30 +50,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="c" value="39" />
+          <entry key="c" value="48" />
           <entry key="gitignore" value="1" />
-          <entry key="h" value="35" />
-          <entry key="txt" value="5" />
+          <entry key="h" value="44" />
+          <entry key="txt" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="3" />
-          <entry key="ObjectiveC" value="74" />
+          <entry key="CMakeLists.txt" value="7" />
+          <entry key="ObjectiveC" value="92" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="1107" />
-          <entry key="h" value="598" />
+          <entry key="c" value="1942" />
+          <entry key="h" value="915" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="2" />
-          <entry key="ObjectiveC" value="1705" />
+          <entry key="ObjectiveC" value="2857" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
@@ -118,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="195">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -129,27 +95,35 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>strea</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/test/page_test.c" />
         <option value="$PROJECT_DIR$/src/test/json_test.c" />
         <option value="$PROJECT_DIR$/src/lib/page.c" />
-        <option value="$PROJECT_DIR$/src/include/usr/contract.h" />
         <option value="$PROJECT_DIR$/src/lib/fileio.c" />
         <option value="$PROJECT_DIR$/src/include/fileio.h" />
         <option value="$PROJECT_DIR$/src/lib/usr/iter_event.c" />
-        <option value="$PROJECT_DIR$/src/lib/usr/contract.c" />
-        <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/src/include/usr/iter_event.h" />
         <option value="$PROJECT_DIR$/src/include/usr/fileio.h" />
         <option value="$PROJECT_DIR$/src/include/json.h" />
         <option value="$PROJECT_DIR$/src/include/strutil.h" />
         <option value="$PROJECT_DIR$/src/include/page.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/include/queue.h" />
+        <option value="$PROJECT_DIR$/src/include/usr/contract.h" />
+        <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/src/lib/usr/contract.c" />
+        <option value="$PROJECT_DIR$/src/include/linked.h" />
+        <option value="$PROJECT_DIR$/src/lib/queue.c" />
       </list>
     </option>
   </component>
@@ -160,10 +134,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="296" />
-    <option name="y" value="34" />
-    <option name="width" value="1118" />
-    <option name="height" value="900" />
+    <option name="x" value="25" />
+    <option name="y" value="35" />
+    <option name="width" value="955" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -181,6 +155,17 @@
               <item name="s0" type="b2602c69:ProjectViewProjectNode" />
               <item name="s0" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="s0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="s0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="s0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="s0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -188,7 +173,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="page&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/page.c&#10;main&#9;FILE&#9;file:///Users/raynor106/s0/main.c&#10;contra&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/contract.c&#10;ite&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/iter_event.c&#10;iter&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/iter_event.c&#10;page.c&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/page.c&#10;contr&#9;FILE&#9;file:///Users/raynor106/s0/src/include/usr/contract.h" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/queue.c&#10;link&#9;FILE&#9;file:///Users/raynor106/s0/src/include/linked.h&#10;que&#9;FILE&#9;file:///Users/raynor106/s0/src/include/queue.h&#10;mai&#9;FILE&#9;file:///Users/raynor106/s0/main.c&#10;ma&#9;FILE&#9;file:///Users/raynor106/s0/CMakeLists.txt&#10;con&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/contract.c&#10;q&#9;FILE&#9;file:///Users/raynor106/s0/src/include/queue.h&#10;page&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/page.c&#10;main&#9;FILE&#9;file:///Users/raynor106/s0/main.c&#10;contra&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/contract.c&#10;ite&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/iter_event.c&#10;iter&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/iter_event.c&#10;page.c&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/page.c&#10;contr&#9;FILE&#9;file:///Users/raynor106/s0/src/include/usr/contract.h" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
@@ -237,30 +222,30 @@
       <option name="presentableId" value="Default" />
       <updated>1534775190912</updated>
       <workItem from="1534775195369" duration="3210000" />
-      <workItem from="1534806682247" duration="5656000" />
+      <workItem from="1534806682247" duration="10789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8866000" />
+    <option name="totallyTimeSpent" value="13999000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="296" y="34" width="1118" height="900" extended-state="0" />
+    <frame x="25" y="35" width="955" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20930232" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20930232" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32810616" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.48250905" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32762557" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.48173517" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32810616" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32762557" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3293124" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3293124" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.3293124" />
@@ -279,13 +264,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/page_test.c">
       <provider selected="true" editor-type-id="text-editor">
@@ -320,16 +298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/usr/contract.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#50#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/stream.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -342,16 +310,6 @@
         <state>
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/include/usr/contract.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#95#112#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -434,10 +392,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/usr/contract.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="e#95#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/queue.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="e#89#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/linked.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/usr/contract.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="e#50#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/queue.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding>
+            <element signature="e#50#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="195">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

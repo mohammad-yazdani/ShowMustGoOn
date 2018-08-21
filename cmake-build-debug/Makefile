@@ -231,6 +231,33 @@ src/lib/page.c.s:
 	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/page.c.s
 .PHONY : src/lib/page.c.s
 
+src/lib/queue.o: src/lib/queue.c.o
+
+.PHONY : src/lib/queue.o
+
+# target to build an object file
+src/lib/queue.c.o:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/queue.c.o
+.PHONY : src/lib/queue.c.o
+
+src/lib/queue.i: src/lib/queue.c.i
+
+.PHONY : src/lib/queue.i
+
+# target to preprocess a source file
+src/lib/queue.c.i:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/queue.c.i
+.PHONY : src/lib/queue.c.i
+
+src/lib/queue.s: src/lib/queue.c.s
+
+.PHONY : src/lib/queue.s
+
+# target to generate assembly for a file
+src/lib/queue.c.s:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/queue.c.s
+.PHONY : src/lib/queue.c.s
+
 src/lib/strutil.o: src/lib/strutil.c.o
 
 .PHONY : src/lib/strutil.o
@@ -387,6 +414,9 @@ help:
 	@echo "... src/lib/page.o"
 	@echo "... src/lib/page.i"
 	@echo "... src/lib/page.s"
+	@echo "... src/lib/queue.o"
+	@echo "... src/lib/queue.i"
+	@echo "... src/lib/queue.s"
 	@echo "... src/lib/strutil.o"
 	@echo "... src/lib/strutil.i"
 	@echo "... src/lib/strutil.s"

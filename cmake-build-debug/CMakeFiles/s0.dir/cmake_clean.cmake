@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/s0.dir/src/test/page_test.c.o"
   "CMakeFiles/s0.dir/main.c.o"
   "CMakeFiles/s0.dir/src/lib/usr/contract.c.o"
+  "CMakeFiles/s0.dir/src/lib/queue.c.o"
   "s0.pdb"
   "s0"
 )

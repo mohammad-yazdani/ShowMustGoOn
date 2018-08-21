@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/raynor106/s0/src/lib/fileio.c" "/Users/raynor106/s0/cmake-build-debug/CMakeFiles/s0.dir/src/lib/fileio.c.o"
   "/Users/raynor106/s0/src/lib/json.c" "/Users/raynor106/s0/cmake-build-debug/CMakeFiles/s0.dir/src/lib/json.c.o"
   "/Users/raynor106/s0/src/lib/page.c" "/Users/raynor106/s0/cmake-build-debug/CMakeFiles/s0.dir/src/lib/page.c.o"
+  "/Users/raynor106/s0/src/lib/queue.c" "/Users/raynor106/s0/cmake-build-debug/CMakeFiles/s0.dir/src/lib/queue.c.o"
   "/Users/raynor106/s0/src/lib/strutil.c" "/Users/raynor106/s0/cmake-build-debug/CMakeFiles/s0.dir/src/lib/strutil.c.o"
   "/Users/raynor106/s0/src/lib/usr/contract.c" "/Users/raynor106/s0/cmake-build-debug/CMakeFiles/s0.dir/src/lib/usr/contract.c.o"
   "/Users/raynor106/s0/src/lib/usr/iter_event.c" "/Users/raynor106/s0/cmake-build-debug/CMakeFiles/s0.dir/src/lib/usr/iter_event.c.o"

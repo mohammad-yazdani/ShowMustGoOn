@@ -93,10 +93,13 @@
 		<Unit filename="/Users/raynor106/s0/src/include/json.h">
 			<Option target="s0"/>
 		</Unit>
+		<Unit filename="/Users/raynor106/s0/src/include/linked.h">
+			<Option target="s0"/>
+		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/include/page.h">
 			<Option target="s0"/>
 		</Unit>
-		<Unit filename="/Users/raynor106/s0/src/include/stream.h">
+		<Unit filename="/Users/raynor106/s0/src/include/queue.h">
 			<Option target="s0"/>
 		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/include/strutil.h">
@@ -118,6 +121,9 @@
 			<Option target="s0"/>
 		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/lib/page.c">
+			<Option target="s0"/>
+		</Unit>
+		<Unit filename="/Users/raynor106/s0/src/lib/queue.c">
 			<Option target="s0"/>
 		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/lib/strutil.c">
