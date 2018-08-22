@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <errno.h>
-#include <strutil.h>
+#include <util/strutil.h>
 #include <usr/iter_event.h>
 
 // TODO : Rename [ALL] based on standard

@@ -6,7 +6,7 @@
 #define S0_CONTRACT_H
 
 #include <page.h>
-#include <fileio.h>
+#include <io/fileio.h>
 #include <queue.h>
 
 typedef struct contract_object {

@@ -4,7 +4,7 @@
 
 #include <contract.h>
 #include <string.h>
-#include <strutil.h>
+#include <util/strutil.h>
 
 int
 contract_create(contract * collector, const char * contract_id)

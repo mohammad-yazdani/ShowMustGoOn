@@ -150,59 +150,59 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/main.c.s
 .PHONY : main.c.s
 
-src/lib/fileio.o: src/lib/fileio.c.o
+src/lib/io/db.o: src/lib/io/db.c.o
 
-.PHONY : src/lib/fileio.o
-
-# target to build an object file
-src/lib/fileio.c.o:
-	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/fileio.c.o
-.PHONY : src/lib/fileio.c.o
-
-src/lib/fileio.i: src/lib/fileio.c.i
-
-.PHONY : src/lib/fileio.i
-
-# target to preprocess a source file
-src/lib/fileio.c.i:
-	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/fileio.c.i
-.PHONY : src/lib/fileio.c.i
-
-src/lib/fileio.s: src/lib/fileio.c.s
-
-.PHONY : src/lib/fileio.s
-
-# target to generate assembly for a file
-src/lib/fileio.c.s:
-	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/fileio.c.s
-.PHONY : src/lib/fileio.c.s
-
-src/lib/json.o: src/lib/json.c.o
-
-.PHONY : src/lib/json.o
+.PHONY : src/lib/io/db.o
 
 # target to build an object file
-src/lib/json.c.o:
-	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/json.c.o
-.PHONY : src/lib/json.c.o
+src/lib/io/db.c.o:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/io/db.c.o
+.PHONY : src/lib/io/db.c.o
 
-src/lib/json.i: src/lib/json.c.i
+src/lib/io/db.i: src/lib/io/db.c.i
 
-.PHONY : src/lib/json.i
+.PHONY : src/lib/io/db.i
 
 # target to preprocess a source file
-src/lib/json.c.i:
-	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/json.c.i
-.PHONY : src/lib/json.c.i
+src/lib/io/db.c.i:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/io/db.c.i
+.PHONY : src/lib/io/db.c.i
 
-src/lib/json.s: src/lib/json.c.s
+src/lib/io/db.s: src/lib/io/db.c.s
 
-.PHONY : src/lib/json.s
+.PHONY : src/lib/io/db.s
 
 # target to generate assembly for a file
-src/lib/json.c.s:
-	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/json.c.s
-.PHONY : src/lib/json.c.s
+src/lib/io/db.c.s:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/io/db.c.s
+.PHONY : src/lib/io/db.c.s
+
+src/lib/io/fileio.o: src/lib/io/fileio.c.o
+
+.PHONY : src/lib/io/fileio.o
+
+# target to build an object file
+src/lib/io/fileio.c.o:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/io/fileio.c.o
+.PHONY : src/lib/io/fileio.c.o
+
+src/lib/io/fileio.i: src/lib/io/fileio.c.i
+
+.PHONY : src/lib/io/fileio.i
+
+# target to preprocess a source file
+src/lib/io/fileio.c.i:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/io/fileio.c.i
+.PHONY : src/lib/io/fileio.c.i
+
+src/lib/io/fileio.s: src/lib/io/fileio.c.s
+
+.PHONY : src/lib/io/fileio.s
+
+# target to generate assembly for a file
+src/lib/io/fileio.c.s:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/io/fileio.c.s
+.PHONY : src/lib/io/fileio.c.s
 
 src/lib/page.o: src/lib/page.c.o
 
@@ -258,32 +258,32 @@ src/lib/queue.c.s:
 	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/queue.c.s
 .PHONY : src/lib/queue.c.s
 
-src/lib/strutil.o: src/lib/strutil.c.o
+src/lib/usr/analysis.o: src/lib/usr/analysis.c.o
 
-.PHONY : src/lib/strutil.o
+.PHONY : src/lib/usr/analysis.o
 
 # target to build an object file
-src/lib/strutil.c.o:
-	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/strutil.c.o
-.PHONY : src/lib/strutil.c.o
+src/lib/usr/analysis.c.o:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/usr/analysis.c.o
+.PHONY : src/lib/usr/analysis.c.o
 
-src/lib/strutil.i: src/lib/strutil.c.i
+src/lib/usr/analysis.i: src/lib/usr/analysis.c.i
 
-.PHONY : src/lib/strutil.i
+.PHONY : src/lib/usr/analysis.i
 
 # target to preprocess a source file
-src/lib/strutil.c.i:
-	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/strutil.c.i
-.PHONY : src/lib/strutil.c.i
+src/lib/usr/analysis.c.i:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/usr/analysis.c.i
+.PHONY : src/lib/usr/analysis.c.i
 
-src/lib/strutil.s: src/lib/strutil.c.s
+src/lib/usr/analysis.s: src/lib/usr/analysis.c.s
 
-.PHONY : src/lib/strutil.s
+.PHONY : src/lib/usr/analysis.s
 
 # target to generate assembly for a file
-src/lib/strutil.c.s:
-	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/strutil.c.s
-.PHONY : src/lib/strutil.c.s
+src/lib/usr/analysis.c.s:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/usr/analysis.c.s
+.PHONY : src/lib/usr/analysis.c.s
 
 src/lib/usr/contract.o: src/lib/usr/contract.c.o
 
@@ -338,6 +338,60 @@ src/lib/usr/iter_event.s: src/lib/usr/iter_event.c.s
 src/lib/usr/iter_event.c.s:
 	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/usr/iter_event.c.s
 .PHONY : src/lib/usr/iter_event.c.s
+
+src/lib/util/json.o: src/lib/util/json.c.o
+
+.PHONY : src/lib/util/json.o
+
+# target to build an object file
+src/lib/util/json.c.o:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/util/json.c.o
+.PHONY : src/lib/util/json.c.o
+
+src/lib/util/json.i: src/lib/util/json.c.i
+
+.PHONY : src/lib/util/json.i
+
+# target to preprocess a source file
+src/lib/util/json.c.i:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/util/json.c.i
+.PHONY : src/lib/util/json.c.i
+
+src/lib/util/json.s: src/lib/util/json.c.s
+
+.PHONY : src/lib/util/json.s
+
+# target to generate assembly for a file
+src/lib/util/json.c.s:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/util/json.c.s
+.PHONY : src/lib/util/json.c.s
+
+src/lib/util/strutil.o: src/lib/util/strutil.c.o
+
+.PHONY : src/lib/util/strutil.o
+
+# target to build an object file
+src/lib/util/strutil.c.o:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/util/strutil.c.o
+.PHONY : src/lib/util/strutil.c.o
+
+src/lib/util/strutil.i: src/lib/util/strutil.c.i
+
+.PHONY : src/lib/util/strutil.i
+
+# target to preprocess a source file
+src/lib/util/strutil.c.i:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/util/strutil.c.i
+.PHONY : src/lib/util/strutil.c.i
+
+src/lib/util/strutil.s: src/lib/util/strutil.c.s
+
+.PHONY : src/lib/util/strutil.s
+
+# target to generate assembly for a file
+src/lib/util/strutil.c.s:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/util/strutil.c.s
+.PHONY : src/lib/util/strutil.c.s
 
 src/test/json_test.o: src/test/json_test.c.o
 
@@ -405,27 +459,33 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/lib/fileio.o"
-	@echo "... src/lib/fileio.i"
-	@echo "... src/lib/fileio.s"
-	@echo "... src/lib/json.o"
-	@echo "... src/lib/json.i"
-	@echo "... src/lib/json.s"
+	@echo "... src/lib/io/db.o"
+	@echo "... src/lib/io/db.i"
+	@echo "... src/lib/io/db.s"
+	@echo "... src/lib/io/fileio.o"
+	@echo "... src/lib/io/fileio.i"
+	@echo "... src/lib/io/fileio.s"
 	@echo "... src/lib/page.o"
 	@echo "... src/lib/page.i"
 	@echo "... src/lib/page.s"
 	@echo "... src/lib/queue.o"
 	@echo "... src/lib/queue.i"
 	@echo "... src/lib/queue.s"
-	@echo "... src/lib/strutil.o"
-	@echo "... src/lib/strutil.i"
-	@echo "... src/lib/strutil.s"
+	@echo "... src/lib/usr/analysis.o"
+	@echo "... src/lib/usr/analysis.i"
+	@echo "... src/lib/usr/analysis.s"
 	@echo "... src/lib/usr/contract.o"
 	@echo "... src/lib/usr/contract.i"
 	@echo "... src/lib/usr/contract.s"
 	@echo "... src/lib/usr/iter_event.o"
 	@echo "... src/lib/usr/iter_event.i"
 	@echo "... src/lib/usr/iter_event.s"
+	@echo "... src/lib/util/json.o"
+	@echo "... src/lib/util/json.i"
+	@echo "... src/lib/util/json.s"
+	@echo "... src/lib/util/strutil.o"
+	@echo "... src/lib/util/strutil.i"
+	@echo "... src/lib/util/strutil.s"
 	@echo "... src/test/json_test.o"
 	@echo "... src/test/json_test.i"
 	@echo "... src/test/json_test.s"

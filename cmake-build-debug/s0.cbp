@@ -87,10 +87,10 @@
 		<Unit filename="/Users/raynor106/s0/main.c">
 			<Option target="s0"/>
 		</Unit>
-		<Unit filename="/Users/raynor106/s0/src/include/fileio.h">
+		<Unit filename="/Users/raynor106/s0/src/include/io/db.h">
 			<Option target="s0"/>
 		</Unit>
-		<Unit filename="/Users/raynor106/s0/src/include/json.h">
+		<Unit filename="/Users/raynor106/s0/src/include/io/fileio.h">
 			<Option target="s0"/>
 		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/include/linked.h">
@@ -102,9 +102,6 @@
 		<Unit filename="/Users/raynor106/s0/src/include/queue.h">
 			<Option target="s0"/>
 		</Unit>
-		<Unit filename="/Users/raynor106/s0/src/include/strutil.h">
-			<Option target="s0"/>
-		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/include/usr/analysis.h">
 			<Option target="s0"/>
 		</Unit>
@@ -114,10 +111,16 @@
 		<Unit filename="/Users/raynor106/s0/src/include/usr/iter_event.h">
 			<Option target="s0"/>
 		</Unit>
-		<Unit filename="/Users/raynor106/s0/src/lib/fileio.c">
+		<Unit filename="/Users/raynor106/s0/src/include/util/json.h">
 			<Option target="s0"/>
 		</Unit>
-		<Unit filename="/Users/raynor106/s0/src/lib/json.c">
+		<Unit filename="/Users/raynor106/s0/src/include/util/strutil.h">
+			<Option target="s0"/>
+		</Unit>
+		<Unit filename="/Users/raynor106/s0/src/lib/io/db.c">
+			<Option target="s0"/>
+		</Unit>
+		<Unit filename="/Users/raynor106/s0/src/lib/io/fileio.c">
 			<Option target="s0"/>
 		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/lib/page.c">
@@ -126,13 +129,19 @@
 		<Unit filename="/Users/raynor106/s0/src/lib/queue.c">
 			<Option target="s0"/>
 		</Unit>
-		<Unit filename="/Users/raynor106/s0/src/lib/strutil.c">
+		<Unit filename="/Users/raynor106/s0/src/lib/usr/analysis.c">
 			<Option target="s0"/>
 		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/lib/usr/contract.c">
 			<Option target="s0"/>
 		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/lib/usr/iter_event.c">
+			<Option target="s0"/>
+		</Unit>
+		<Unit filename="/Users/raynor106/s0/src/lib/util/json.c">
+			<Option target="s0"/>
+		</Unit>
+		<Unit filename="/Users/raynor106/s0/src/lib/util/strutil.c">
 			<Option target="s0"/>
 		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/test/json_test.c">

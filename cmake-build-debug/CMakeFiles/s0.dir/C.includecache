@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
+../src/include/io/fileio.h
+stdlib.h
+-
+
 ../src/include/linked.h
+stdint.h
+-
+
+../src/include/page.h
+stdlib.h
+-
 stdint.h
 -
 
@@ -18,11 +28,29 @@ stdlib.h
 linked.h
 ../src/include/linked.h
 
-/Users/raynor106/s0/src/lib/queue.c
+../src/include/usr/contract.h
+page.h
+-
+io/fileio.h
+-
 queue.h
 -
-string.h
+
+../src/include/usr/iter_event.h
+stdint.h
 -
-stdlib.h
+page.h
+-
+io/fileio.h
+-
+
+/Users/raynor106/s0/main.c
+stdio.h
+-
+sqlite3.h
+-
+usr/contract.h
+-
+usr/iter_event.h
 -
 

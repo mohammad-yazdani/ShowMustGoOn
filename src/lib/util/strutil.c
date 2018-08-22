@@ -3,7 +3,7 @@
 //
 
 #include <stdlib.h>
-#include <strutil.h>
+#include <util/strutil.h>
 #include <string.h>
 #include <stdio.h>
 

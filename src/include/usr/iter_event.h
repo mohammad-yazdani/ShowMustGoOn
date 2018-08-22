@@ -7,7 +7,7 @@
 
 #include <stdint.h>
 #include <page.h>
-#include <fileio.h>
+#include <io/fileio.h>
 
 typedef struct iter_event {
 	double loss;

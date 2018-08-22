@@ -1,4 +1,7 @@
 #include <stdio.h>
+
+#include <sqlite3.h>
+
 #include <usr/contract.h>
 #include <usr/iter_event.h>
 
@@ -6,6 +9,8 @@ int
 main()
 {
 	printf("Running ...\n");
+
+    printf("%s\n", sqlite3_libversion());
 
 	queue * contracts = load_contracts("../data/layers.txt");
 

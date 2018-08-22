@@ -70,31 +70,31 @@ CMakeFiles/s0.dir/src/lib/usr/iter_event.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/s0.dir/src/lib/usr/iter_event.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raynor106/s0/src/lib/usr/iter_event.c -o CMakeFiles/s0.dir/src/lib/usr/iter_event.c.s
 
-CMakeFiles/s0.dir/src/lib/fileio.c.o: CMakeFiles/s0.dir/flags.make
-CMakeFiles/s0.dir/src/lib/fileio.c.o: ../src/lib/fileio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/raynor106/s0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/s0.dir/src/lib/fileio.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/s0.dir/src/lib/fileio.c.o   -c /Users/raynor106/s0/src/lib/fileio.c
+CMakeFiles/s0.dir/src/lib/io/fileio.c.o: CMakeFiles/s0.dir/flags.make
+CMakeFiles/s0.dir/src/lib/io/fileio.c.o: ../src/lib/io/fileio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/raynor106/s0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/s0.dir/src/lib/io/fileio.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/s0.dir/src/lib/io/fileio.c.o   -c /Users/raynor106/s0/src/lib/io/fileio.c
 
-CMakeFiles/s0.dir/src/lib/fileio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/s0.dir/src/lib/fileio.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/raynor106/s0/src/lib/fileio.c > CMakeFiles/s0.dir/src/lib/fileio.c.i
+CMakeFiles/s0.dir/src/lib/io/fileio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/s0.dir/src/lib/io/fileio.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/raynor106/s0/src/lib/io/fileio.c > CMakeFiles/s0.dir/src/lib/io/fileio.c.i
 
-CMakeFiles/s0.dir/src/lib/fileio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/s0.dir/src/lib/fileio.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raynor106/s0/src/lib/fileio.c -o CMakeFiles/s0.dir/src/lib/fileio.c.s
+CMakeFiles/s0.dir/src/lib/io/fileio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/s0.dir/src/lib/io/fileio.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raynor106/s0/src/lib/io/fileio.c -o CMakeFiles/s0.dir/src/lib/io/fileio.c.s
 
-CMakeFiles/s0.dir/src/lib/json.c.o: CMakeFiles/s0.dir/flags.make
-CMakeFiles/s0.dir/src/lib/json.c.o: ../src/lib/json.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/raynor106/s0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/s0.dir/src/lib/json.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/s0.dir/src/lib/json.c.o   -c /Users/raynor106/s0/src/lib/json.c
+CMakeFiles/s0.dir/src/lib/util/json.c.o: CMakeFiles/s0.dir/flags.make
+CMakeFiles/s0.dir/src/lib/util/json.c.o: ../src/lib/util/json.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/raynor106/s0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/s0.dir/src/lib/util/json.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/s0.dir/src/lib/util/json.c.o   -c /Users/raynor106/s0/src/lib/util/json.c
 
-CMakeFiles/s0.dir/src/lib/json.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/s0.dir/src/lib/json.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/raynor106/s0/src/lib/json.c > CMakeFiles/s0.dir/src/lib/json.c.i
+CMakeFiles/s0.dir/src/lib/util/json.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/s0.dir/src/lib/util/json.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/raynor106/s0/src/lib/util/json.c > CMakeFiles/s0.dir/src/lib/util/json.c.i
 
-CMakeFiles/s0.dir/src/lib/json.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/s0.dir/src/lib/json.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raynor106/s0/src/lib/json.c -o CMakeFiles/s0.dir/src/lib/json.c.s
+CMakeFiles/s0.dir/src/lib/util/json.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/s0.dir/src/lib/util/json.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raynor106/s0/src/lib/util/json.c -o CMakeFiles/s0.dir/src/lib/util/json.c.s
 
 CMakeFiles/s0.dir/src/lib/page.c.o: CMakeFiles/s0.dir/flags.make
 CMakeFiles/s0.dir/src/lib/page.c.o: ../src/lib/page.c
@@ -109,18 +109,18 @@ CMakeFiles/s0.dir/src/lib/page.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/s0.dir/src/lib/page.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raynor106/s0/src/lib/page.c -o CMakeFiles/s0.dir/src/lib/page.c.s
 
-CMakeFiles/s0.dir/src/lib/strutil.c.o: CMakeFiles/s0.dir/flags.make
-CMakeFiles/s0.dir/src/lib/strutil.c.o: ../src/lib/strutil.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/raynor106/s0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/s0.dir/src/lib/strutil.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/s0.dir/src/lib/strutil.c.o   -c /Users/raynor106/s0/src/lib/strutil.c
+CMakeFiles/s0.dir/src/lib/util/strutil.c.o: CMakeFiles/s0.dir/flags.make
+CMakeFiles/s0.dir/src/lib/util/strutil.c.o: ../src/lib/util/strutil.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/raynor106/s0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/s0.dir/src/lib/util/strutil.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/s0.dir/src/lib/util/strutil.c.o   -c /Users/raynor106/s0/src/lib/util/strutil.c
 
-CMakeFiles/s0.dir/src/lib/strutil.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/s0.dir/src/lib/strutil.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/raynor106/s0/src/lib/strutil.c > CMakeFiles/s0.dir/src/lib/strutil.c.i
+CMakeFiles/s0.dir/src/lib/util/strutil.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/s0.dir/src/lib/util/strutil.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/raynor106/s0/src/lib/util/strutil.c > CMakeFiles/s0.dir/src/lib/util/strutil.c.i
 
-CMakeFiles/s0.dir/src/lib/strutil.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/s0.dir/src/lib/strutil.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raynor106/s0/src/lib/strutil.c -o CMakeFiles/s0.dir/src/lib/strutil.c.s
+CMakeFiles/s0.dir/src/lib/util/strutil.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/s0.dir/src/lib/util/strutil.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raynor106/s0/src/lib/util/strutil.c -o CMakeFiles/s0.dir/src/lib/util/strutil.c.s
 
 CMakeFiles/s0.dir/src/test/json_test.c.o: CMakeFiles/s0.dir/flags.make
 CMakeFiles/s0.dir/src/test/json_test.c.o: ../src/test/json_test.c
@@ -187,35 +187,65 @@ CMakeFiles/s0.dir/src/lib/queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/s0.dir/src/lib/queue.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raynor106/s0/src/lib/queue.c -o CMakeFiles/s0.dir/src/lib/queue.c.s
 
+CMakeFiles/s0.dir/src/lib/usr/analysis.c.o: CMakeFiles/s0.dir/flags.make
+CMakeFiles/s0.dir/src/lib/usr/analysis.c.o: ../src/lib/usr/analysis.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/raynor106/s0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/s0.dir/src/lib/usr/analysis.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/s0.dir/src/lib/usr/analysis.c.o   -c /Users/raynor106/s0/src/lib/usr/analysis.c
+
+CMakeFiles/s0.dir/src/lib/usr/analysis.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/s0.dir/src/lib/usr/analysis.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/raynor106/s0/src/lib/usr/analysis.c > CMakeFiles/s0.dir/src/lib/usr/analysis.c.i
+
+CMakeFiles/s0.dir/src/lib/usr/analysis.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/s0.dir/src/lib/usr/analysis.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raynor106/s0/src/lib/usr/analysis.c -o CMakeFiles/s0.dir/src/lib/usr/analysis.c.s
+
+CMakeFiles/s0.dir/src/lib/io/db.c.o: CMakeFiles/s0.dir/flags.make
+CMakeFiles/s0.dir/src/lib/io/db.c.o: ../src/lib/io/db.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/raynor106/s0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/s0.dir/src/lib/io/db.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/s0.dir/src/lib/io/db.c.o   -c /Users/raynor106/s0/src/lib/io/db.c
+
+CMakeFiles/s0.dir/src/lib/io/db.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/s0.dir/src/lib/io/db.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/raynor106/s0/src/lib/io/db.c > CMakeFiles/s0.dir/src/lib/io/db.c.i
+
+CMakeFiles/s0.dir/src/lib/io/db.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/s0.dir/src/lib/io/db.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/raynor106/s0/src/lib/io/db.c -o CMakeFiles/s0.dir/src/lib/io/db.c.s
+
 # Object files for target s0
 s0_OBJECTS = \
 "CMakeFiles/s0.dir/src/lib/usr/iter_event.c.o" \
-"CMakeFiles/s0.dir/src/lib/fileio.c.o" \
-"CMakeFiles/s0.dir/src/lib/json.c.o" \
+"CMakeFiles/s0.dir/src/lib/io/fileio.c.o" \
+"CMakeFiles/s0.dir/src/lib/util/json.c.o" \
 "CMakeFiles/s0.dir/src/lib/page.c.o" \
-"CMakeFiles/s0.dir/src/lib/strutil.c.o" \
+"CMakeFiles/s0.dir/src/lib/util/strutil.c.o" \
 "CMakeFiles/s0.dir/src/test/json_test.c.o" \
 "CMakeFiles/s0.dir/src/test/page_test.c.o" \
 "CMakeFiles/s0.dir/main.c.o" \
 "CMakeFiles/s0.dir/src/lib/usr/contract.c.o" \
-"CMakeFiles/s0.dir/src/lib/queue.c.o"
+"CMakeFiles/s0.dir/src/lib/queue.c.o" \
+"CMakeFiles/s0.dir/src/lib/usr/analysis.c.o" \
+"CMakeFiles/s0.dir/src/lib/io/db.c.o"
 
 # External object files for target s0
 s0_EXTERNAL_OBJECTS =
 
 s0: CMakeFiles/s0.dir/src/lib/usr/iter_event.c.o
-s0: CMakeFiles/s0.dir/src/lib/fileio.c.o
-s0: CMakeFiles/s0.dir/src/lib/json.c.o
+s0: CMakeFiles/s0.dir/src/lib/io/fileio.c.o
+s0: CMakeFiles/s0.dir/src/lib/util/json.c.o
 s0: CMakeFiles/s0.dir/src/lib/page.c.o
-s0: CMakeFiles/s0.dir/src/lib/strutil.c.o
+s0: CMakeFiles/s0.dir/src/lib/util/strutil.c.o
 s0: CMakeFiles/s0.dir/src/test/json_test.c.o
 s0: CMakeFiles/s0.dir/src/test/page_test.c.o
 s0: CMakeFiles/s0.dir/main.c.o
 s0: CMakeFiles/s0.dir/src/lib/usr/contract.c.o
 s0: CMakeFiles/s0.dir/src/lib/queue.c.o
+s0: CMakeFiles/s0.dir/src/lib/usr/analysis.c.o
+s0: CMakeFiles/s0.dir/src/lib/io/db.c.o
 s0: CMakeFiles/s0.dir/build.make
 s0: CMakeFiles/s0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/raynor106/s0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable s0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/raynor106/s0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable s0"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/s0.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

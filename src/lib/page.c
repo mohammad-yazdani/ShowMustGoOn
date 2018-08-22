@@ -5,9 +5,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include <json.h>
+#include <util/json.h>
 #include <page.h>
-#include <strutil.h>
+#include <util/strutil.h>
 
 int
 page_create(page * new_page, const char key[KEY_LEN], uintptr_t value)

@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
-#include <json.h>
-#include <strutil.h>
+#include <util/json.h>
+#include <util/strutil.h>
 
 char *
 dq_wrap(const char * value)

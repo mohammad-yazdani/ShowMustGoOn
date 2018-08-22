@@ -194,6 +194,9 @@ s0_BINARY_DIR:STATIC=/Users/raynor106/s0/cmake-build-debug
 //Value Computed by CMake
 s0_SOURCE_DIR:STATIC=/Users/raynor106/s0
 
+//The directory containing a CMake configuration file for sqlite3.
+sqlite3_DIR:PATH=sqlite3_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
