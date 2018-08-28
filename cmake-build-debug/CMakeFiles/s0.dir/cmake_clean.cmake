@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/s0.dir/src/lib/queue.c.o"
   "CMakeFiles/s0.dir/src/lib/usr/analysis.c.o"
   "CMakeFiles/s0.dir/src/lib/io/db.c.o"
+  "CMakeFiles/s0.dir/src/test/db.c.o"
   "s0.pdb"
   "s0"
 )

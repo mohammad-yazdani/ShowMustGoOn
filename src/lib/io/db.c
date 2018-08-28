@@ -2,16 +2,30 @@
 // Created by Mohammad Yazdani on 8/21/18.
 //
 
+#include <stdio.h>
 #include <db.h>
+#include <page.h>
+#include <sqlite3.h>
 
-int
+sqlite3 *
 db_init()
 {
-    return 0;
+    sqlite3 *db;
+
+    int rc = sqlite3_open("../data/data.db", &db);
+
+    if (rc != SQLITE_OK) {
+
+        fprintf(stderr, "Cannot open database: %s\n", sqlite3_errmsg(db));
+        sqlite3_close(db);
+
+        return NULL;
+    }
+    return db;
 }
 
 int
-db_insert(char * key, char * value)
+db_insert(char * key, page * p)
 {
     return 0;
 }

@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/raynor106/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.15/CLion 2018.2 EAP.app/Contents/bin/cmake/mac/bin/cmake"
+CMAKE_COMMAND = "/Users/raynor106/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/CLion 2018.2 EAP.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/raynor106/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.15/CLion 2018.2 EAP.app/Contents/bin/cmake/mac/bin/cmake" -E remove -f
+RM = "/Users/raynor106/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/CLion 2018.2 EAP.app/Contents/bin/cmake/mac/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/raynor106/s0/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/raynor106/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.15/CLion 2018.2 EAP.app/Contents/bin/cmake/mac/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/raynor106/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/CLion 2018.2 EAP.app/Contents/bin/cmake/mac/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/raynor106/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.15/CLion 2018.2 EAP.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+	"/Users/raynor106/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/CLion 2018.2 EAP.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -393,6 +393,33 @@ src/lib/util/strutil.c.s:
 	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/util/strutil.c.s
 .PHONY : src/lib/util/strutil.c.s
 
+src/test/db.o: src/test/db.c.o
+
+.PHONY : src/test/db.o
+
+# target to build an object file
+src/test/db.c.o:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/test/db.c.o
+.PHONY : src/test/db.c.o
+
+src/test/db.i: src/test/db.c.i
+
+.PHONY : src/test/db.i
+
+# target to preprocess a source file
+src/test/db.c.i:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/test/db.c.i
+.PHONY : src/test/db.c.i
+
+src/test/db.s: src/test/db.c.s
+
+.PHONY : src/test/db.s
+
+# target to generate assembly for a file
+src/test/db.c.s:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/test/db.c.s
+.PHONY : src/test/db.c.s
+
 src/test/json_test.o: src/test/json_test.c.o
 
 .PHONY : src/test/json_test.o
@@ -486,6 +513,9 @@ help:
 	@echo "... src/lib/util/strutil.o"
 	@echo "... src/lib/util/strutil.i"
 	@echo "... src/lib/util/strutil.s"
+	@echo "... src/test/db.o"
+	@echo "... src/test/db.i"
+	@echo "... src/test/db.s"
 	@echo "... src/test/json_test.o"
 	@echo "... src/test/json_test.i"
 	@echo "... src/test/json_test.s"

@@ -12,14 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43e5e726-9c4d-40a2-8df4-f63050b3907c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/include/io/db.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/io/db.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/usr/analysis.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/db.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/raynor106.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/raynor106.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/DependInfo.cmake" afterDir="false" />
@@ -30,30 +32,22 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/fileio.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/json.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/strutil.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/usr/contract.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/usr/contract.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/usr/iter_event.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/usr/iter_event.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/io/db.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/io/db.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/page.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/page.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/util/json.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s0.dir/src/lib/util/json.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/s0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/s0" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/s0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/s0.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/s0.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/fileio.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/io/fileio.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/json.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/util/json.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/strutil.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/util/strutil.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/usr/analysis.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/usr/analysis.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/usr/contract.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/usr/contract.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/usr/iter_event.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/usr/iter_event.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/fileio.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/io/fileio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/json.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/util/json.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/include/io/db.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/io/db.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/include/page.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/page.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/include/util/json.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/util/json.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/include/util/strutil.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/util/strutil.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/io/db.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/io/db.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/page.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/page.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/strutil.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/util/strutil.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/usr/contract.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/usr/contract.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/usr/iter_event.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/usr/iter_event.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/util/json.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/util/json.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/json_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/json_test.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/page_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/page_test.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,84 +56,106 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+        <item name="Cars: table" type="ffe0bd85:SqliteImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
     <session id="-846063633">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="2" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="c" value="55" />
+          <entry key="c" value="86" />
+          <entry key="cars" value="5" />
           <entry key="cmake" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="h" value="49" />
+          <entry key="h" value="61" />
+          <entry key="sql" value="1" />
           <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="10" />
-          <entry key="ObjectiveC" value="104" />
+          <entry key="Database Element" value="5" />
+          <entry key="ObjectiveC" value="147" />
           <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="2119" />
-          <entry key="h" value="1415" />
+          <entry key="c" value="5718" />
+          <entry key="h" value="1740" />
+          <entry key="m" value="516" />
           <entry key="txt" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="57" />
-          <entry key="ObjectiveC" value="3534" />
+          <entry key="ObjectiveC" value="7974" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/main.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -155,8 +171,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/page_test.c" />
-        <option value="$PROJECT_DIR$/src/test/json_test.c" />
-        <option value="$PROJECT_DIR$/src/lib/page.c" />
         <option value="$PROJECT_DIR$/src/lib/fileio.c" />
         <option value="$PROJECT_DIR$/src/include/fileio.h" />
         <option value="$PROJECT_DIR$/src/lib/usr/iter_event.c" />
@@ -164,7 +178,6 @@
         <option value="$PROJECT_DIR$/src/include/usr/fileio.h" />
         <option value="$PROJECT_DIR$/src/include/json.h" />
         <option value="$PROJECT_DIR$/src/include/strutil.h" />
-        <option value="$PROJECT_DIR$/src/include/page.h" />
         <option value="$PROJECT_DIR$/src/include/queue.h" />
         <option value="$PROJECT_DIR$/src/include/usr/contract.h" />
         <option value="$PROJECT_DIR$/src/lib/usr/contract.c" />
@@ -172,12 +185,20 @@
         <option value="$PROJECT_DIR$/src/lib/queue.c" />
         <option value="$PROJECT_DIR$/src/include/tlb.h" />
         <option value="$PROJECT_DIR$/src/include/usr/analysis.h" />
-        <option value="$PROJECT_DIR$/src/include/io/db.h" />
-        <option value="$PROJECT_DIR$/src/lib/io/db.c" />
         <option value="$PROJECT_DIR$/src/lib/usr/analysis.c" />
-        <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/cmake/FindSQLite3.cmake" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/include/io/db.h" />
+        <option value="$PROJECT_DIR$/src/lib/io/db.c" />
+        <option value="$PROJECT_DIR$/src/include/page.h" />
+        <option value="$PROJECT_DIR$/src/include/util/strutil.h" />
+        <option value="$PROJECT_DIR$/src/lib/util/strutil.c" />
+        <option value="$PROJECT_DIR$/src/test/db.c" />
+        <option value="$PROJECT_DIR$/src/include/util/json.h" />
+        <option value="$PROJECT_DIR$/src/lib/util/json.c" />
+        <option value="$PROJECT_DIR$/src/lib/page.c" />
+        <option value="$PROJECT_DIR$/src/test/json_test.c" />
+        <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
   </component>
@@ -187,9 +208,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="785" />
+    <option name="y" value="29" />
+    <option name="width" value="884" />
+    <option name="height" value="939" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -201,8 +225,10 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="cma&#9;FILE&#9;file:///Users/raynor106/s0/CMakeLists.txt&#10;main&#9;FILE&#9;file:///Users/raynor106/s0/main.c&#10;link&#9;FILE&#9;file:///Users/raynor106/s0/src/include/linked.h&#10;que&#9;FILE&#9;file:///Users/raynor106/s0/src/include/queue.h&#10;mai&#9;FILE&#9;file:///Users/raynor106/s0/main.c&#10;ma&#9;FILE&#9;file:///Users/raynor106/s0/CMakeLists.txt&#10;con&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/contract.c&#10;q&#9;FILE&#9;file:///Users/raynor106/s0/src/include/queue.h&#10;page&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/page.c&#10;contra&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/contract.c&#10;ite&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/iter_event.c&#10;iter&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/iter_event.c&#10;page.c&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/page.c&#10;contr&#9;FILE&#9;file:///Users/raynor106/s0/src/include/usr/contract.h" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="SearchEverywhereHistoryKey" value="ma&#9;FILE&#9;file:///Users/raynor106/s0/main.c&#10;j&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/util/json.c&#10;js&#9;FILE&#9;file:///Users/raynor106/s0/src/include/util/json.h&#10;page&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/page.c&#10;main&#9;FILE&#9;file:///Users/raynor106/s0/main.c&#10;extra&#9;null&#9;null&#10;json&#9;FILE&#9;file:///Users/raynor106/s0/src/include/util/json.h&#10;str&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/util/strutil.c&#10;pa&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/page.c&#10;page_cre&#9;null&#9;null&#10;page_c&#9;FILE&#9;file:///Users/raynor106/s0/src/test/page_test.c&#10;jso&#9;FILE&#9;file:///Users/raynor106/s0/src/test/json_test.c&#10;tes&#9;FILE&#9;file:///Users/raynor106/s0/src/test/page_test.c&#10;mai&#9;FILE&#9;file:///Users/raynor106/s0/main.c&#10;s&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/util/strutil.c&#10;strutil&#9;FILE&#9;file:///Users/raynor106/s0/src/include/util/strutil.h&#10;db&#9;FILE&#9;file:///Users/raynor106/s0/src/include/io/db.h&#10;cma&#9;FILE&#9;file:///Users/raynor106/s0/CMakeLists.txt&#10;link&#9;FILE&#9;file:///Users/raynor106/s0/src/include/linked.h&#10;que&#9;FILE&#9;file:///Users/raynor106/s0/src/include/queue.h&#10;con&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/contract.c&#10;q&#9;FILE&#9;file:///Users/raynor106/s0/src/include/queue.h&#10;contra&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/contract.c&#10;ite&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/iter_event.c&#10;iter&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/usr/iter_event.c&#10;page.c&#9;FILE&#9;file:///Users/raynor106/s0/src/lib/page.c&#10;contr&#9;FILE&#9;file:///Users/raynor106/s0/src/include/usr/contract.h" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -256,37 +282,40 @@
       <workItem from="1534870013824" duration="2195000" />
       <workItem from="1534892097376" duration="3787000" />
       <workItem from="1534911001435" duration="451000" />
-      <workItem from="1534959652119" duration="153000" />
+      <workItem from="1534959652119" duration="1682000" />
+      <workItem from="1534961430651" duration="1816000" />
+      <workItem from="1535082578392" duration="32271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20986000" />
+    <option name="totallyTimeSpent" value="56602000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="785" y="29" width="884" height="939" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5486111" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2077381" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3270809" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.48173517" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.36576355" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3275862" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3293124" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.32881773" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32949308" />
+      <window_info anchor="bottom" x="20" y="49" width="764" height="496" id="Debug" order="2" weight="0.49308756" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.36059907" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32699168" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3293124" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.328341" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32967034" />
+      <window_info anchor="bottom" x="878" y="44" width="784" height="917" id="Run" order="13" weight="0.3813364" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" x="3025" y="75" width="552" height="961" id="Database" order="3" type="WINDOWED" weight="0.32857144" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,23 +324,58 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>(page **)(extracted-&gt;data)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>extracted-&gt;data</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(page **)((((page **)(extracted-&gt;data))[0])-&gt;data)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(((page **)(extracted-&gt;data))[0])</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((page **)(extracted-&gt;data))[0]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(page **)(extracted-&gt;data)[0]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(extracted-&gt;data)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>extracted</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(page **)(curr_page-&gt;data)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/page_test.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/json_test.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/iter-event-loss-portfolio.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -336,37 +400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/include/util/json.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/include/util/strutil.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/page.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/util/json.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/io/fileio.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -406,31 +439,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/include/tlb.h" />
-    <entry file="file://$PROJECT_DIR$/src/include/page.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/include/usr/analysis.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/util/strutil.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/include/io/db.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -441,28 +453,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/io/db.c">
+    <entry file="file://$PROJECT_DIR$/cmake/Findsqlite3.cmake" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake/Findsqlite3.cmake" />
-    <entry file="file://$PROJECT_DIR$/main.c">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0699964d-c8be-44ea-8f3e-5e3d37e98632/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/io/fileio.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        <state relative-caret-position="210">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6b5e2155-d7cb-4ba6-a09e-01befba77811/schema/main/table/cars">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/io/db.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/util/strutil.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/io/db.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#50#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/db.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="e#50#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/page_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="69" selection-end-column="1" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/src/include/page.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        <state relative-caret-position="270">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/util/strutil.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/util/json.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/util/json.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/page.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="140" column="19" lean-forward="true" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/json_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>

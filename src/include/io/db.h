@@ -4,8 +4,9 @@
 
 #ifndef S0_DB_H
 #define S0_DB_H
+#include <sqlite3.h>
 
-int db_init();
+sqlite3 * db_init();
 int db_insert(char * key, char * value);
 char * db_find(char * key);
 

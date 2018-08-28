@@ -108,7 +108,7 @@ page_to_json(const page *p)
 		    page * child = children[i];
 			char * standalone_json = page_to_json(child);
 			if (i == 0) {
-				char * beginning_of_array = to_array_being(standalone_json);
+				char * beginning_of_array = to_array_begin(standalone_json);
 				free(standalone_json);
 				standalone_json = beginning_of_array;
 			}
@@ -136,4 +136,43 @@ page_to_json(const page *p)
 	}
 
 	return dump_naked;
+}
+
+page * // Recursive
+json_to_page(const char * json)
+{
+    char * unwrapped = unwrap(json);
+    if (unwrapped == NULL) return NULL;
+
+    char **key_collector = malloc(sizeof(char *)), **value_collector = malloc(sizeof(char *));
+    int res = extract_assignment(unwrapped, key_collector, value_collector);
+    if (res) exit(res);
+    char * key = *key_collector;
+    char * value = *value_collector;
+
+    if (value == NULL) return NULL;
+
+    page * curr_page = malloc(sizeof(page));
+    res = page_create(curr_page, dq_unwrap(key), 0);
+    if (res) exit(res);
+
+    size_t num_children = 0;
+    char ** children = extract_values(value, &num_children);
+    if (children == NULL) return NULL;
+
+    for (int i = 0; i < num_children; i++) {
+        char * child = children[i];
+        char * backup = strdup(child);
+        page * lower = json_to_page(child);
+        if (lower == NULL) {
+            char ** leaf_key = malloc(sizeof(char *)), ** leaf_value = malloc(sizeof(char *));
+            extract_assignment(backup, leaf_key, leaf_value);
+            page_insert(curr_page, dq_unwrap(*leaf_key), (uintptr_t) dq_unwrap((*leaf_value)));
+        } else {
+            page_insert(curr_page, NULL, (uintptr_t) lower);
+            free(backup);
+        }
+    }
+
+    return curr_page;
 }

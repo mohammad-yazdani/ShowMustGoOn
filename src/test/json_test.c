@@ -3,7 +3,7 @@
 #include <util/json.h>
 #include "page.h"
 
-int t0main() {
+int json_main() {
     printf("Hello, World!\n");
     page *test_page = malloc(sizeof(page));
     char key0[] = "0123456";
@@ -14,7 +14,7 @@ int t0main() {
     uintptr_t res_push = page_insert(test_page, "test", (uintptr_t) test);
     if (res_push) exit((int) res_push);
 
-	char test1[12] = "01234567891";
+    char test1[12] = "01234567891";
     res_push = page_insert(test_page, "test1", (uintptr_t) test1);
     if (res_push) exit((int) res_push);
 
@@ -61,9 +61,12 @@ int t0main() {
     char * json_unwrapped = page_to_json(test_page);
     char * json = block_wrap(json_unwrapped);
     free(json_unwrapped);
-    printf("%s\n", json);
+    printf("Lv0:\n%s\n", json);
+    page * extracted = json_to_page(json);
     free(json);
-
+    json = block_wrap(page_to_json(extracted));
+    printf("Lv1:\n%s\n", json);
+    free(extracted);
     page_destroy(test_page);
 
     return 0;

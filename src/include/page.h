@@ -21,6 +21,8 @@ int page_create(page * new_page, const char key[KEY_LEN], uintptr_t value);
 uintptr_t page_insert(page * p, const char key[KEY_LEN], uintptr_t item);
 page * page_index(page * p, const char key[KEY_LEN]);
 int page_destroy(page * p);
+
+page * json_to_page(const char *json);
 char * page_to_json(const page *p);
 
 

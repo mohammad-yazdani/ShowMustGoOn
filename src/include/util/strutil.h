@@ -10,7 +10,7 @@
 char * alloc_string(size_t size);
 
 int parse_line_wc(char * line);
-char ** parse_line(char * line, const int word_count);
+char ** parse_line(char * line, int word_count);
 
 
 #endif //S0_STRUTIL_H

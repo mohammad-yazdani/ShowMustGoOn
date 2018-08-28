@@ -144,6 +144,9 @@
 		<Unit filename="/Users/raynor106/s0/src/lib/util/strutil.c">
 			<Option target="s0"/>
 		</Unit>
+		<Unit filename="/Users/raynor106/s0/src/test/db.c">
+			<Option target="s0"/>
+		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/test/json_test.c">
 			<Option target="s0"/>
 		</Unit>
