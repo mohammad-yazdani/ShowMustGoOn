@@ -4,7 +4,6 @@
 #include "page.h"
 
 int json_main() {
-    printf("Hello, World!\n");
     page *test_page = malloc(sizeof(page));
     char key0[] = "0123456";
     int res = page_create(test_page, key0, 0);

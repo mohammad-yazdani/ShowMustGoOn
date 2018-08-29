@@ -102,6 +102,9 @@
 		<Unit filename="/Users/raynor106/s0/src/include/queue.h">
 			<Option target="s0"/>
 		</Unit>
+		<Unit filename="/Users/raynor106/s0/src/include/tlb.h">
+			<Option target="s0"/>
+		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/include/usr/analysis.h">
 			<Option target="s0"/>
 		</Unit>
@@ -127,6 +130,9 @@
 			<Option target="s0"/>
 		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/lib/queue.c">
+			<Option target="s0"/>
+		</Unit>
+		<Unit filename="/Users/raynor106/s0/src/lib/tlb.c">
 			<Option target="s0"/>
 		</Unit>
 		<Unit filename="/Users/raynor106/s0/src/lib/usr/analysis.c">

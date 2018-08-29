@@ -6,8 +6,10 @@
 #define S0_DB_H
 #include <sqlite3.h>
 
-sqlite3 * db_init();
-int db_insert(char * key, char * value);
-char * db_find(char * key);
+int db_init();
+int db_close();
+int db_insert(const char * key, const char * value);
+int db_update(const char * key, const char * value);
+char * db_find(const char * key);
 
 #endif //S0_DB_H
