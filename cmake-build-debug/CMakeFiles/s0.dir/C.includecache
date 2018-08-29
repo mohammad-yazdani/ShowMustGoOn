@@ -6,7 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/Users/raynor106/s0/main.c
+../src/include/page.h
+stdlib.h
+-
+stdint.h
+-
+
+../src/include/util/strutil.h
+stdlib.h
+-
+
+/Users/raynor106/s0/src/lib/io/db.c
 stdio.h
+-
+db.h
+-
+page.h
+-
+sqlite3.h
+-
+string.h
+-
+util/strutil.h
 -
 

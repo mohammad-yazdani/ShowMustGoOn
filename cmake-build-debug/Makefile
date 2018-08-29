@@ -258,6 +258,33 @@ src/lib/queue.c.s:
 	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/queue.c.s
 .PHONY : src/lib/queue.c.s
 
+src/lib/tlb.o: src/lib/tlb.c.o
+
+.PHONY : src/lib/tlb.o
+
+# target to build an object file
+src/lib/tlb.c.o:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/tlb.c.o
+.PHONY : src/lib/tlb.c.o
+
+src/lib/tlb.i: src/lib/tlb.c.i
+
+.PHONY : src/lib/tlb.i
+
+# target to preprocess a source file
+src/lib/tlb.c.i:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/tlb.c.i
+.PHONY : src/lib/tlb.c.i
+
+src/lib/tlb.s: src/lib/tlb.c.s
+
+.PHONY : src/lib/tlb.s
+
+# target to generate assembly for a file
+src/lib/tlb.c.s:
+	$(MAKE) -f CMakeFiles/s0.dir/build.make CMakeFiles/s0.dir/src/lib/tlb.c.s
+.PHONY : src/lib/tlb.c.s
+
 src/lib/usr/analysis.o: src/lib/usr/analysis.c.o
 
 .PHONY : src/lib/usr/analysis.o
@@ -498,6 +525,9 @@ help:
 	@echo "... src/lib/queue.o"
 	@echo "... src/lib/queue.i"
 	@echo "... src/lib/queue.s"
+	@echo "... src/lib/tlb.o"
+	@echo "... src/lib/tlb.i"
+	@echo "... src/lib/tlb.s"
 	@echo "... src/lib/usr/analysis.o"
 	@echo "... src/lib/usr/analysis.i"
 	@echo "... src/lib/usr/analysis.s"
